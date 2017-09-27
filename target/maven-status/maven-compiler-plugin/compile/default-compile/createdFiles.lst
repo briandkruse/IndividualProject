@@ -1,0 +1,4 @@
+edu\matc\controller\SearchUser.class
+edu\matc\entity\User.class
+edu\matc\persistence\UserDirectory.class
+edu\matc\persistence\SessionFactoryProvider.class

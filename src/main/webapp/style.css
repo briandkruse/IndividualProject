@@ -1,0 +1,22 @@
+#wrapper {
+    width: 900px;
+    border: black 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px 20px 10px;
+}
+
+#navigation {
+    text-align: center;
+}
+
+#mapplaceholder {
+    height: 500px;
+    width: 800px;
+    background-color: red;
+    margin: 10px auto 10px auto;
+}
+
+#appinfo {
+    margin: 10px 0px 10px 0px;
+}
