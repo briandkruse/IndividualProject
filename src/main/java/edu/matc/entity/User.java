@@ -8,10 +8,10 @@ import javax.persistence.*;
 public class User {
 
     @Column(name="firstname")
-    private String firstname;
+    private String firstName;
 
     @Column(name="lastname")
-    private String lastname;
+    private String lastName;
 
     @Id
     @GeneratedValue(generator = "increment")
@@ -23,33 +23,30 @@ public class User {
 
     public User() {}
 
-    public User(String firstname, String lastname, int id) {
-        this.setFirstname(firstname);
-        this.setLastname(lastname);
+    public User(String firstName, String lastName, int id) {
+        this.setFirstName(firstName);
+        this.setLastName(lastName);
         this.setId(id);
+        //TODO fix constructors
     }
 
     public User(int id) {
         this.setId(id);
     }
 
-
-
-    public String getFirstname() {
-        return firstname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
+    public void setLastName(String lastName) { this.lastName = lastName; }
 
     public int getId() {
         return id;
@@ -57,5 +54,13 @@ public class User {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String toString () {
+        String userInformation =
+                "First Name:" + this.firstName +
+                " Last Name: " + this.lastName +
+                " ID: " + this.id;
+        return userInformation;
     }
 }

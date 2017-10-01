@@ -99,7 +99,7 @@ public class UserDirectory {
 
     public void updateUser(User user) {
         Transaction transaction = null;
-        Session session = null;
+        Session session= null;
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
@@ -110,11 +110,11 @@ public class UserDirectory {
                 try {
                     transaction.rollback();
                 } catch (HibernateException he2) {
-                    log.error("Error rolling back save of user: " + user, he2);
+                    log.error("Could not update user: " + user, he2);
                 }
             }
         } finally {
-            if (session != null) {
+            if (session != null){
                 session.close();
             }
         }
