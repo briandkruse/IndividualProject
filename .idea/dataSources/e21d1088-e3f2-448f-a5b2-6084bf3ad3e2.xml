@@ -11,26 +11,51 @@
     <schema id="5" parent="1" name="performance_schema"/>
     <schema id="6" parent="1" name="sample"/>
     <schema id="7" parent="1" name="sys"/>
-    <table id="8" parent="2" name="users"/>
-    <column id="9" parent="8" name="id">
+    <schema id="8" parent="1" name="projecttest"/>
+    <table id="9" parent="2" name="user_roles"/>
+    <table id="10" parent="2" name="users"/>
+    <column id="11" parent="9" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="10" parent="8" name="firstname">
+    <column id="12" parent="9" name="login">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="11" parent="8" name="lastname">
+    <column id="13" parent="9" name="rolename">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="14" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="15" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="16" parent="10" name="firstname">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="17" parent="10" name="lastname">
       <Position>3</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="12" parent="8" name="password">
+    <column id="18" parent="10" name="password">
       <Position>4</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <key id="13" parent="8" name="PRIMARY">
+    <column id="19" parent="10" name="login">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="20" parent="10" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
