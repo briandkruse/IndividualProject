@@ -3,9 +3,9 @@
 <body>
 <div id="wrapper">
      <%@include file="navigation.jsp"%>
-    <h1>Driver Buddy</h1>
+    <h1>Speedy Grocery Shopper</h1>
     <div id="map">
-        <div id="mapplaceholder">
+        <div id="groceryimage">
         </div>
     </div>
     <div id="appinfo">

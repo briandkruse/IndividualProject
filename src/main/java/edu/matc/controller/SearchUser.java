@@ -30,7 +30,6 @@ import javax.servlet.http.*;
                     int id = 5;
                     User user = new User(firstName, lastName, id);
                     userDirectory.addUser(user);
-                    //TODO figure out id issue
                 } else if (request.getParameter("submit").equals("Delete")){
                     int id = Integer.parseInt(request.getParameter("deleteid"));
                     userDirectory.deleteUser(id);

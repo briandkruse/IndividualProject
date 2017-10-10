@@ -14,7 +14,7 @@ Update time log
 
 ### Week 3
 Create project structure in IntelliJ  
-Complete screen design (on paper)  
+Complete screen design (wireframe)  
 Create site skeleton  
 Complete database design and create first draft database  
 Set up logging  
@@ -25,28 +25,27 @@ Update time log
 
 ### Week 4
 Add Hibernate  
-Create registration and login  
-Explore/learn/experiment with Google Map APIs  
 Update time log  
 
 ### Week 5
-Create database with full functionality  
-Make my project "prettier"  
-Get Google map API working in the project (preliminary)  
+Create database design
+Create registration and login  
+  
 Update time log  
 
 ### Week 6
-Make my project "prettier"  
-Build new route feature  
-Build View existing routes feature  
+Build new recipe jsp and javascript
+Build recipe DAO and servlet
 Update time log  
 
 ### Week 7
-Build view route details  
+Build new template jsp and javascript
+Build template DAO and servlet
 Update time log  
 
 ### Week 8
-Create user and route preferences  
+Build new shopping list jsp and javascript
+build shopping list servlet
 Code review  
 Update time log  
 Clean up, Wrap up code  

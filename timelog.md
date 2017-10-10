@@ -34,9 +34,12 @@
 #Week 4:
 9/21: 2 hours setting up hibernate
 9/22: 3 hours setting up hibernate
-9/25: 4 hours hibernate finally working, setting up forms, rewrite DAO and Servlet. G etting CRUD established in project (instead of exercise)
+9/25: 4 hours hibernate finally working, setting up forms, rewrite DAO and Servlet. Getting CRUD established in project (instead of exercise)
 9/27: 2 hours watching videos and reading
 ### Total: 11 hours
+
+#Week 5:
+
 
 
 
