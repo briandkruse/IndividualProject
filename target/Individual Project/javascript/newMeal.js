@@ -1,12 +1,11 @@
 function init() {
-    //get elements
-    var ingredients = document.getElementById("ingredients")
     var addNewIngredientButton = document.getElementById("addnewingredient");
     //set event handler
-    addNewIngredientButton.onclick=createIngredient;
-    var increment = 2; //for attribute names
+    addNewIngredientButton.onclick = createIngredient;
+}
     function createIngredient() {
         //create elements
+        var ingredients = document.getElementById("ingredients")
         var newIngredient = document.createElement("input");
         var newAmount = document.createElement("input");
         var newUnitMeasure = document.createElement("input");
@@ -15,6 +14,7 @@ function init() {
         var newUnitMeasureText = document.createTextNode("Unit of Measure: ");
         var lineBreak = document.createElement("br");
         //set attributes
+        var increment = 2; //for attribute names
         newIngredient.type="text";
         newAmount.type="text";
         newUnitMeasure.type="text";
@@ -29,7 +29,7 @@ function init() {
         ingredients.appendChild(newUnitMeasureText);
         ingredients.appendChild(newUnitMeasure);
         ingredients.appendChild(lineBreak);
-        increment++;
+        /*increment += 1;*/
 
-    }
+
 }

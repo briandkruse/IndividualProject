@@ -14,24 +14,22 @@ public class User {
     private String lastName;
 
     @Id
-    @GeneratedValue(generator = "increment")
-    @GenericGenerator(name = "increment", strategy = "increment")
-    @Column(name="id")
-    private int id;
+    @Column(name="login")
+    private String login;
 
 
 
     public User() {}
 
-    public User(String firstName, String lastName, int id) {
+    public User(String firstName, String lastName, String login) {
         this.setFirstName(firstName);
         this.setLastName(lastName);
-        this.setId(id);
+        this.setLogin(login);
         //TODO fix constructors
     }
 
-    public User(int id) {
-        this.setId(id);
+    public User(String login) {
+        this.setLogin(login);
     }
 
     public String getFirstName() {
@@ -48,19 +46,19 @@ public class User {
 
     public void setLastName(String lastName) { this.lastName = lastName; }
 
-    public int getId() {
-        return id;
+    public String getLogin() {
+        return login;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String toString () {
         String userInformation =
                 "First Name:" + this.firstName +
                 " Last Name: " + this.lastName +
-                " ID: " + this.id;
+                " Login: " + this.login;
         return userInformation;
     }
 }

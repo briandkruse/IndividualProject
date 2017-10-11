@@ -6,8 +6,9 @@
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>${title}</title>
-    <script src="javascript/newMeal.js" type="text/javascript" charset="utf-8"></script>
     <script src="javascript/newTemplate.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascript/newMeal.js" type="text/javascript" charset="utf-8"></script>
+
 
     <link rel="stylesheet" href="style.css">
     <!-- Latest compiled and minified CSS -->

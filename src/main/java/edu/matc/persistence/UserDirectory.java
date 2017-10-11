@@ -28,14 +28,14 @@ public class UserDirectory {
         return users;
     }
 
-    public User getUser(int id) {
+    public User getUser(String login) {
         User user = null;
         Session session = null;
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
-            user = (User) session.get(User.class, id);
+            user = (User) session.get(User.class, login);
         } catch (HibernateException he) {
-            log.error("Error getting user with id: " + id, he);
+            log.error("Error getting user with id: " + login, he);
         } finally {
             if (session != null) {
                 session.close();
@@ -44,14 +44,14 @@ public class UserDirectory {
         return user;
     }
 
-    public int addUser(User user) {
-        int id = 0;
+    public User addUser(User user) {
         Transaction transaction = null;
         Session session = null;
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
-            id = (int) session.save(user);
+            user = new User(user.getFirstName(), user.getLastName(), user.getLogin());
+            session.save(user);
             transaction.commit();
         } catch (HibernateException he){
             if (transaction != null) {
@@ -66,13 +66,13 @@ public class UserDirectory {
                 session.close();
             }
         }
-        return id;
+        return user;
     }
 
-    public void deleteUser(int id) {
+    public void deleteUser(String login) {
 
         User user = new User();
-        user.setId(id);
+        user.setLogin(login);
 
         Transaction transaction = null;
         Session session = null;
@@ -86,7 +86,7 @@ public class UserDirectory {
                 try {
                     transaction.rollback();
                 } catch (HibernateException he2) {
-                    log.error("Error rolling back delete of user id: " + id, he2);
+                    log.error("Error rolling back delete of user id: " + login, he2);
                 }
             }
         } finally {

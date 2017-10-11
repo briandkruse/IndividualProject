@@ -25,19 +25,20 @@ import javax.servlet.http.*;
                 if (request.getParameter("submit").equals("Add")){
                     String firstName = request.getParameter("firstname");
                     String lastName = request.getParameter("lastname");
+                    String login = request.getParameter("login");
                     logger.error(firstName + "firstname");
                     logger.error(lastName + "lastname");
-                    int id = 5;
-                    User user = new User(firstName, lastName, id);
+
+                    User user = new User(firstName, lastName, login);
                     userDirectory.addUser(user);
                 } else if (request.getParameter("submit").equals("Delete")){
-                    int id = Integer.parseInt(request.getParameter("deleteid"));
-                    userDirectory.deleteUser(id);
+                    String login = request.getParameter("deletelogin");
+                    userDirectory.deleteUser(login);
                 } else if (request.getParameter("submit").equals("Update")) {
                     String firstName = request.getParameter("updatefirstname");
                     String lastName = request.getParameter("updatelastname");
-                    int id = Integer.parseInt(request.getParameter("updateid"));
-                    User user = new User(firstName, lastName, id);
+                    String login = request.getParameter("updatelogin");
+                    User user = new User(firstName, lastName, login);
                     userDirectory.updateUser(user);
                 }
 

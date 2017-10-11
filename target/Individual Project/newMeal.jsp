@@ -28,6 +28,6 @@
 </div>
 </body>
 </html>
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript" src="javascript/newMeal.js" charset="utf-8">
     init();
 </script>

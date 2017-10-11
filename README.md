@@ -1,22 +1,25 @@
-# Brian Kruse Individual Project - Driving Assistant
+# Brian Kruse Individual Project - Grocery Assistant
 
 ### Problem Statement
 
-How often do you see someone weaving in and out of traffic 15 miles over the speed limit just to get stuck at the same stoplight at you? Most people think if you drive 10% faster you'll get somewhere 10% faster but how could you possibly know? This application will track your driving patterns and the give you valuable information about routes you've taken.
+As someone who cooks real meals on a daily basis the pre-grocery shopping experience can leave something to be desired.  
+It can take our family up to 2 hours to decide what to eat, make a list, and get out the door.  
+My hope is to not only make this process faster, but easier and more user friendly in the process.  
 
-The user can drive as they normally would, and after following the same route several times, the application can return statistics based on average speed and time to location, and amount of time saved. This information can inform the user and alter driving patterns e.g. will going 5 miles per hour faster actually get you to work on time. 
+This application will allow the user to input the recipe requirements or create a template to represent  a given dish.  
+The user will be able to select from their created recipe or template meal ideas.  
+The application will pull up all ingredients needed to complete the meal plan you selected.  
+The application will format the output into a printable sheet you can take with you to the grocery store.
+
 
 ### Project Technologies/Techniques
 * Login and Authentication
-  * User accounts due to different driving patterns for different people
+  * User accounts, each holding the users recipe and meal plans
   * Without login only application information available
 * Database (MySQL and Hibernate)
-  * Store users and user preferences
-  * Stores data on routes, route times, route speeds
-* Web Services and APIs
-  * Google Places API
-  * Google Maps Geocoding API
-  * Google Maps Roads API
+  * Store users and user roles
+  * Stores users recipes
+  * Stores users templates
 * Logging 
   * Log4J
 * Hosted on amazon web services
@@ -24,14 +27,16 @@ The user can drive as they normally would, and after following the same route se
 
 ### Design
 Wireframes:  
-[Home](screens.Home.png)  
-[Login](screens.Login.png)  
-[New Route](screens.New Route.png)  
-[Existing Routes](screens.View Existing Routes.png)  
-[Existing Routes Details](screens.Existing Route Details.png)  
-[User Preferences](screens.User Preferences.png)  
+[Home](screens2.home.png)  
+[New Recipe](screens2.newrecipe.png)  
+[New Template](screens2.newtemplate.png)  
+[Create Meal Plan](screens2.createplan.png)  
+[Pre-Output](screens2.preshoppinglist.png)  
+[Output](screens2.output.png)  
 
-### Plan 
+### [Plan](projectplan.md) 
 
 
 ### [Time Log](timelog.md)
+
+### [Database](UML/databaseUml.png)

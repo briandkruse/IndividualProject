@@ -9,7 +9,7 @@
     <h2>Search Results: </h2>
     <table class="table table-bordered">
         <tr>
-            <th>ID</th>
+            <th>Login</th>
             <th>First Name</th>
             <th>Last Name</th>
 
@@ -17,9 +17,9 @@
 
         <c:forEach var = "users" items="${users}">
             <tr>
-                <td>${users.id}</td>
-                <td>${users.firstname}</td>
-                <td>${users.lastname}</td>
+                <td>${users.login}</td>
+                <td>${users.firstName}</td>
+                <td>${users.lastName}</td>
             </tr>
         </c:forEach>
 
