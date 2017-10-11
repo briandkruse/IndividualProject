@@ -4776,3 +4776,503 @@ org.hibernate.AnnotationException: No identifier specified for entity: edu.matc.
 2017-10-11 00:33:11,064 1044 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
 2017-10-11 00:33:11,086 1066 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
 2017-10-11 00:33:11,089 1069 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 09:37:24,340 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 09:37:24,349 9    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 09:37:24,352 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 09:37:24,354 14   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 09:37:24,379 39   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 09:37:24,380 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 09:37:24,462 122  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 09:37:24,580 240  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 09:37:24,602 262  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 09:37:24,602 262  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 09:37:24,603 263  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 09:37:24,605 265  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 09:37:24,928 588  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 09:37:25,078 738  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 09:37:25,083 743  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 09:37:25,608 1268 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 09:37:25,638 1298 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 09:37:25,655 1315 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 09:37:25,676 1336 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 09:37:25,680 1340 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 11:31:40,194 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 11:31:40,201 7    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 11:31:40,203 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 11:31:40,204 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 11:31:40,229 35   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 11:31:40,230 36   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 11:31:40,301 107  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 11:31:40,386 192  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 11:31:40,398 204  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 11:31:40,398 204  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 11:31:40,406 212  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 11:31:40,408 214  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 11:31:40,722 528  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 11:31:40,835 641  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 11:31:40,839 645  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 11:31:41,338 1144 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 11:31:41,367 1173 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 11:31:41,388 1194 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 11:31:41,418 1224 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 11:31:41,422 1228 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 11:56:04,718 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 11:56:04,724 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 11:56:04,725 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 11:56:04,727 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 11:56:04,748 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 11:56:04,748 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 11:56:04,808 90   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 11:56:04,877 159  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 11:56:04,887 169  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 11:56:04,887 169  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 11:56:04,888 170  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 11:56:04,889 171  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 11:56:05,156 438  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 11:56:05,255 537  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 11:56:05,258 540  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 11:56:05,677 959  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 11:56:05,707 989  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 11:56:05,727 1009 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 11:56:05,749 1031 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 11:56:05,752 1034 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:10:24,942 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:10:24,948 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:10:24,949 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:10:24,950 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:10:24,970 28   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:10:24,971 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:10:25,030 88   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:10:25,101 159  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:10:25,115 173  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:10:25,115 173  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:10:25,115 173  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:10:25,117 175  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:10:25,409 467  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:10:25,514 572  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:10:25,517 575  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:10:25,948 1006 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:10:25,977 1035 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:10:25,995 1053 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:10:26,019 1077 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:10:26,022 1080 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:11:48,658 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:11:48,664 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:11:48,665 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:11:48,667 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:11:48,687 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:11:48,687 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:11:48,747 89   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:11:48,819 161  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:11:48,829 171  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:11:48,830 172  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:11:48,830 172  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:11:48,831 173  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:11:49,116 458  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:11:49,225 567  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:11:49,229 571  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:11:49,678 1020 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:11:49,709 1051 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:11:49,727 1069 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:11:49,747 1089 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:11:49,751 1093 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:12:43,750 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:12:43,756 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:12:43,757 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:12:43,759 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:12:43,779 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:12:43,779 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:12:43,841 91   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:12:43,909 159  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:12:43,918 168  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:12:43,919 169  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:12:43,919 169  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:12:43,920 170  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:12:44,195 445  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:12:44,293 543  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:12:44,296 546  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:12:44,710 960  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:12:44,739 989  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:12:44,761 1011 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:12:44,786 1036 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:12:44,790 1040 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:13:57,417 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:13:57,423 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:13:57,425 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:13:57,426 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:13:57,446 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:13:57,446 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:13:57,506 89   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:13:57,571 154  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:13:57,580 163  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:13:57,580 163  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:13:57,581 164  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:13:57,583 166  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:13:57,846 429  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:13:57,942 525  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:13:57,948 531  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:13:58,361 944  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:13:58,389 972  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:13:58,406 989  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:13:58,427 1010 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:13:58,430 1013 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:18:09,627 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:18:09,633 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:18:09,635 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:18:09,636 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:18:09,656 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:18:09,656 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:18:09,716 89   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:18:09,794 167  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:18:09,804 177  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:18:09,805 178  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:18:09,805 178  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:18:09,806 179  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:18:10,067 440  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:18:10,162 535  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:18:10,165 538  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:18:10,580 953  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:18:10,610 983  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:18:10,626 999  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:18:10,647 1020 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:18:10,650 1023 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:20:26,604 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:20:26,610 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:20:26,611 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:20:26,613 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:20:26,634 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:20:26,634 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:20:26,694 90   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:20:26,761 157  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:20:26,770 166  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:20:26,770 166  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:20:26,771 167  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:20:26,772 168  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:20:27,036 432  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:20:27,134 530  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:20:27,137 533  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:20:27,577 973  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:20:27,608 1004 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:20:27,627 1023 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:20:27,652 1048 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:20:27,655 1051 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:21:58,951 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:21:58,956 5    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:21:58,958 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:21:58,959 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:21:58,980 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:21:58,980 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:21:59,040 89   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:21:59,107 156  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:21:59,116 165  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:21:59,117 166  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:21:59,117 166  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:21:59,119 168  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:21:59,430 479  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:21:59,527 576  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:21:59,531 580  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:21:59,963 1012 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:21:59,993 1042 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:22:00,020 1069 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:22:00,043 1092 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:22:00,046 1095 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:22:56,381 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:22:56,387 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:22:56,388 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:22:56,390 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:22:56,410 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:22:56,410 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:22:56,471 90   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:22:56,540 159  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:22:56,549 168  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:22:56,550 169  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:22:56,550 169  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:22:56,552 171  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:22:56,823 442  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:22:56,924 543  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:22:56,927 546  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:22:57,347 966  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:22:57,381 1000 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:22:57,401 1020 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:22:57,422 1041 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:22:57,425 1044 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:25:08,139 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:25:08,145 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:25:08,146 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:25:08,148 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:25:08,168 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:25:08,168 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:25:08,228 89   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:25:08,295 156  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:25:08,304 165  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:25:08,305 166  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:25:08,305 166  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:25:08,306 167  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:25:08,582 443  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:25:08,697 558  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:25:08,702 563  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:25:09,151 1012 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:25:09,192 1053 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:25:09,212 1073 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:25:09,232 1093 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:25:09,235 1096 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:26:25,335 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:26:25,341 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:26:25,342 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:26:25,344 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:26:25,364 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:26:25,364 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:26:25,425 90   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:26:25,490 155  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:26:25,499 164  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:26:25,500 165  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:26:25,500 165  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:26:25,501 166  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:26:25,760 425  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:26:25,861 526  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:26:25,865 530  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:26:26,280 945  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:26:26,309 974  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:26:26,329 994  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:26:26,355 1020 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:26:26,358 1023 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:30:49,204 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:30:49,211 7    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:30:49,213 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:30:49,215 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:30:49,237 33   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:30:49,238 34   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:30:49,307 103  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:30:49,417 213  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:30:49,439 235  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:30:49,440 236  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:30:49,440 236  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:30:49,442 238  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:30:49,757 553  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:30:49,871 667  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:30:49,875 671  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:30:50,367 1163 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:30:50,402 1198 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:30:50,420 1216 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:30:50,440 1236 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:30:50,443 1239 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:33:15,676 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:33:15,682 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:33:15,684 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:33:15,685 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:33:15,706 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:33:15,706 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:33:15,773 97   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:33:15,845 169  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:33:15,854 178  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:33:15,854 178  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:33:15,855 179  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:33:15,856 180  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:33:16,141 465  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:33:16,244 568  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:33:16,248 572  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:33:16,681 1005 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:33:16,709 1033 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:33:16,727 1051 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:33:16,748 1072 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:33:16,751 1075 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:34:14,574 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:34:14,580 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:34:14,582 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:34:14,584 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:34:14,607 33   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:34:14,607 33   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:34:14,677 103  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:34:14,760 186  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:34:14,774 200  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:34:14,775 201  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:34:14,775 201  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:34:14,776 202  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:34:15,086 512  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:34:15,205 631  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:34:15,211 637  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:34:15,706 1132 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:34:15,742 1168 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:34:15,771 1197 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:34:15,795 1221 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:34:15,798 1224 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:35:23,473 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:35:23,478 5    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:35:23,480 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:35:23,481 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:35:23,501 28   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:35:23,501 28   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:35:23,564 91   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:35:23,638 165  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:35:23,647 174  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:35:23,647 174  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:35:23,648 175  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:35:23,649 176  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:35:23,919 446  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:35:24,023 550  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:35:24,026 553  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:35:24,480 1007 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:35:24,514 1041 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:35:24,532 1059 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:35:24,551 1078 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:35:24,554 1081 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:37:58,511 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:37:58,517 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:37:58,519 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:37:58,520 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:37:58,540 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:37:58,540 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:37:58,602 91   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:37:58,670 159  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:37:58,680 169  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:37:58,680 169  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:37:58,680 169  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:37:58,682 171  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:37:58,960 449  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:37:59,060 549  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:37:59,064 553  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:37:59,490 979  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:37:59,518 1007 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:37:59,534 1023 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:37:59,556 1045 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:37:59,559 1048 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:41:05,642 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:41:05,648 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:41:05,649 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:41:05,651 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:41:05,671 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:41:05,671 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:41:05,731 89   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:41:05,799 157  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:41:05,808 166  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:41:05,809 167  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:41:05,809 167  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:41:05,810 168  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:41:06,123 481  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:41:06,230 588  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:41:06,234 592  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:41:06,701 1059 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:41:06,737 1095 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:41:06,758 1116 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:41:06,785 1143 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:41:06,789 1147 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:42:07,937 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:42:07,943 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:42:07,945 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:42:07,947 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:42:07,967 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:42:07,967 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:42:08,031 94   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:42:08,104 167  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:42:08,117 180  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:42:08,117 180  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:42:08,118 181  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:42:08,120 183  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:42:08,404 467  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:42:08,506 569  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:42:08,511 574  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:42:08,966 1029 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:42:08,997 1060 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:42:09,018 1081 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:42:09,039 1102 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:42:09,043 1106 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:45:40,170 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:45:40,176 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:45:40,177 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:45:40,178 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:45:40,199 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:45:40,199 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:45:40,260 90   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:45:40,328 158  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:45:40,337 167  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:45:40,337 167  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:45:40,338 168  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:45:40,339 169  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:45:40,603 433  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:45:40,704 534  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:45:40,708 538  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:45:41,129 959  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:45:41,157 987  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:45:41,176 1006 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:45:41,195 1025 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:45:41,197 1027 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:46:38,467 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:46:38,473 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:46:38,475 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:46:38,476 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:46:38,497 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:46:38,497 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:46:38,563 96   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:46:38,642 175  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:46:38,656 189  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:46:38,658 191  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:46:38,659 192  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:46:38,660 193  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:46:38,956 489  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:46:39,056 589  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:46:39,060 593  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:46:39,494 1027 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:46:39,527 1060 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:46:39,548 1081 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:46:39,570 1103 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:46:39,574 1107 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:47:47,033 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:47:47,039 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:47:47,041 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:47:47,042 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:47:47,063 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:47:47,063 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:47:47,129 96   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:47:47,216 183  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:47:47,228 195  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:47:47,228 195  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:47:47,229 196  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:47:47,231 198  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:47:47,516 483  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:47:47,617 584  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:47:47,621 588  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:47:48,059 1026 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:47:48,087 1054 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:47:48,104 1071 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:47:48,127 1094 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:47:48,130 1097 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:48:33,997 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:48:34,003 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:48:34,005 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:48:34,006 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:48:34,027 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:48:34,027 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:48:34,088 91   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:48:34,158 161  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:48:34,168 171  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:48:34,169 172  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:48:34,169 172  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:48:34,170 173  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:48:34,464 467  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:48:34,566 569  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:48:34,570 573  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:48:34,988 991  [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:48:35,012 1015 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:48:35,027 1030 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:48:35,045 1048 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:48:35,060 1063 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:51:45,635 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:51:45,643 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:51:45,645 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:51:45,647 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:51:45,671 36   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:51:45,671 36   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:51:45,739 104  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:51:45,818 183  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:51:45,830 195  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project?useSSL=false]
+2017-10-11 12:51:45,831 196  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:51:45,832 197  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:51:45,836 201  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:51:46,138 503  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:51:46,253 618  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:51:46,257 622  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:51:46,737 1102 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:51:46,768 1133 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:51:46,791 1156 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:51:46,814 1179 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing
+2017-10-11 12:51:46,818 1183 [main] INFO  org.hibernate.event.internal.DefaultDeleteEventListener  - HHH000114: Handling transient entity in delete processing

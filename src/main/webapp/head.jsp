@@ -6,9 +6,6 @@
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>${title}</title>
-    <script src="javascript/newTemplate.js" type="text/javascript" charset="utf-8"></script>
-    <script src="javascript/newMeal.js" type="text/javascript" charset="utf-8"></script>
-
 
     <link rel="stylesheet" href="style.css">
     <!-- Latest compiled and minified CSS -->
@@ -18,6 +15,8 @@
     <link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
 
     <!-- Latest compiled and minified JavaScript -->
+<%--
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+--%>
 
 </head>
