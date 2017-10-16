@@ -1,20 +1,21 @@
 function init() {
     //get elements
-    console.log("testing");
-    var options = document.getElementById("options")
     var addNewIngredientButton = document.getElementById("addnewingredient");
-    var addNewOptionButton = document.getElementById("addnewoption");
+    var addNewFoodGroupButton = document.getElementById("addnewfoodgroup");
     var lineBreak = document.createElement("br");
+
     //set event handler
     addNewIngredientButton.onclick = createIngredient;
-    addNewOptionButton.onclick = createOption;
-    console.log("testing");
+    addNewFoodGroupButton.onclick = createFoodGroup;
+
+
     //set increments
     var ingredientIncrement = 2; //for attribute names
     var foodGroupIncrement = 2; //for attribute names
 
 
-    function createOption() {
+    function createFoodGroup() {
+        addNewIngredientButton = document.getElementById("addnewingredient");
         //reset ingredient increment
         ingredientIncrement = 1;
 
@@ -32,14 +33,18 @@ function init() {
         groupIngredientInput.type = "text";
         groupIngredientInput.name = "ingredient" + ingredientIncrement;
 
+        addNewIngredientButton.parentNode.removeChild(addNewIngredientButton);
+
         //create ingredient button
-        var addIngredientButton = document.createElement("input");
-        addIngredientButton.type = "button";
-        addIngredientButton.id = "addnewingredient";
-        addIngredientButton.value = "Add Another Ingredient";
+        var newIngredientButton = document.createElement("input");
+        newIngredientButton.type = "button";
+        newIngredientButton.id = "addnewingredient";
+        newIngredientButton.value = "Add Another Ingredient";
+        newIngredientButton.onclick = createIngredient;
+
 
         //remove elements
-        options.removeChild(addNewIngredientButton);
+
 
         //append elements
         targetDiv.appendChild(foodGroupText);
@@ -47,10 +52,11 @@ function init() {
         targetDiv.appendChild(lineBreak);
         targetDiv.appendChild(groupIngredientText);
         targetDiv.appendChild(groupIngredientInput);
-        targetDiv.appendChild(addIngredientButton);
+        targetDiv.appendChild(lineBreak.cloneNode());
+        targetDiv.appendChild(newIngredientButton);
 
         foodGroupIncrement++;
-
+        addNewIngredientButton = document.getElementById("addnewingredient");
     }
     function createIngredient() {
         //create elements
@@ -60,11 +66,14 @@ function init() {
         newIngredient.type="text";
         newIngredient.name="ingredient" + ingredientIncrement;
         //position elements
-        options.appendChild(newIngredientText);
-        options.appendChild(newIngredient);
-        options.appendChild(lineBreak);
+        addNewIngredientButton = document.getElementById("addnewingredient");
+        addNewIngredientButton.parentNode.appendChild(newIngredientText);
+        addNewIngredientButton.parentNode.appendChild(newIngredient);
+        addNewIngredientButton.parentNode.appendChild(lineBreak.cloneNode());
+
         ingredientIncrement++;
     }
+
 
 
 }

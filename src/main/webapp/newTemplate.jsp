@@ -4,25 +4,24 @@
 <div id="wrapper">
     <%@include file="navigation.jsp"%>
     <h1>Speedy Grocery Shopper</h1>
-    <div>
+    <div id="form">
         <form action="" method="POST">
             <label for name="name">Template Name: </label>
             <input type="text" name="name" />
             <label for name="catagory">Catagory: </label>
             <input type="text" name="catagory">
             <br /><hr />
-            <div id="options">
-                <label for name="optionname">Food Group name: </label>
-                <input type="text" name="option1" /><br />
+            <div id="firstgroup">
+                <label for name="foodgroupname">Food Group name: </label>
+                <input type="text" name="foodgroup1" /><br />
                 <label for name="ingredient">Ingredient: </label>
                 <input type="text" name="ingredient1" /><br />
-
-
                 <input type="button" id="addnewingredient" value="Add Another Ingredient">
             </div>
+
             <hr />
             <div id="foodgroup">
-                <input type="button" id="addnewoption" value="Add Another Option">
+                <input type="button" id="addnewfoodgroup" value="Add Another Food Group">
             </div>
             <hr />
             <input type="submit" value="Submit" name="submit" />
