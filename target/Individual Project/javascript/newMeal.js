@@ -29,7 +29,7 @@ function init() {
         ingredients.appendChild(newUnitMeasureText);
         ingredients.appendChild(newUnitMeasure);
         ingredients.appendChild(lineBreak);
-        /*increment += 1;*/
+        increment += 1;
 
 
 }

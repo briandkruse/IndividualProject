@@ -50,7 +50,7 @@ public class UserDirectory {
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
-            user = new User(user.getFirstName(), user.getLastName(), user.getLogin());
+            user = new User(user.getLogin(), user.getFirstName(), user.getLastName());
             session.save(user);
             transaction.commit();
         } catch (HibernateException he){

@@ -5,7 +5,7 @@
     <%@include file="navigation.jsp"%>
     <h1>Speedy Grocery Shopper</h1>
     <div>
-        <form action="" method="POST">
+        <form action="recipeServlet" method="POST">
             <label for name="name">Recipe Name: </label>
             <input type="text" name="name" />
             <label for name="catagory">Catagory: </label>

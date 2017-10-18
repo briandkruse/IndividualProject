@@ -10,9 +10,7 @@
 
         <!-- Database connection settings -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/project?useSSL=false</property>
-        <property name="connection.username">root</property>
-        <property name="connection.password">minkru79</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/project</property>
 
         <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
@@ -24,6 +22,7 @@
         <mapping class="edu.matc.entity.User"/>
         <mapping class="edu.matc.entity.Recipe"/>
         <mapping class="edu.matc.entity.Ingredient"/>
+
 
     </session-factory>
 
