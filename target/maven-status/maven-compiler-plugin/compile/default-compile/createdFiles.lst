@@ -1,8 +1,0 @@
-edu\matc\controller\SearchUser.class
-edu\matc\entity\User.class
-edu\matc\persistence\RecipeDao.class
-edu\matc\persistence\UserDirectory.class
-edu\matc\entity\Ingredient.class
-edu\matc\persistence\SessionFactoryProvider.class
-edu\matc\controller\RecipeServlet.class
-edu\matc\entity\Recipe.class
