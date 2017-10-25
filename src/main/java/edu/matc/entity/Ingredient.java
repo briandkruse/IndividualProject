@@ -3,25 +3,41 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.*;
 
-@Embeddable
-public class Ingredient {
+@Entity
+@Table(name = "Ingredient")
+public class Ingredient implements Serializable {
     private int id;
     private String name;
     private BigDecimal amount;
-    private String unitmeasure;
+    private String unitMeasure;
+    private Set<Recipe> recipes = new HashSet<>();
 
+
+    //empty
+    public Ingredient() {}
+
+    //with instance variables
     public Ingredient(String name, BigDecimal amount, String unitmeasure) {
         this.name = name;
         this.amount = amount;
-        this.unitmeasure = unitmeasure;
+        this.unitMeasure = unitmeasure;
     }
 
+    //with collections
+    public Ingredient(String name, BigDecimal amount, String unitmeasure, Set<Recipe> recipes) {
+        this.name = name;
+        this.amount = amount;
+        this.unitMeasure = unitmeasure;
+        this.recipes = recipes;
+    }
     @Id
     @GeneratedValue(generator="increment")
     @GenericGenerator(name="increment", strategy = "increment")
-    @Column(name = "id", nullable = false)
+    @Column(name = "ingredientid", nullable = false)
     public int getId() {
         return id;
     }
@@ -52,12 +68,21 @@ public class Ingredient {
 
     @Basic
     @Column(name = "unitmeasure", nullable = true, length = 10)
-    public String getUnitmeasure() {
-        return unitmeasure;
+    public String getUnitMeasure() {
+        return unitMeasure;
     }
 
-    public void setUnitmeasure(String unitmeasure) {
-        this.unitmeasure = unitmeasure;
+    public void setUnitMeasure(String unitmeasure) {
+        this.unitMeasure = unitmeasure;
+    }
+
+    @ManyToMany(mappedBy = "ingredients")
+    public Set<Recipe> getRecipes() {
+        return this.recipes;
+    }
+
+    public void setRecipes(Set<Recipe> recipes) {
+        this.recipes = recipes;
     }
 
     @Override
@@ -70,7 +95,7 @@ public class Ingredient {
         if (id != that.id) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
         if (amount != null ? !amount.equals(that.amount) : that.amount != null) return false;
-        if (unitmeasure != null ? !unitmeasure.equals(that.unitmeasure) : that.unitmeasure != null) return false;
+        if (unitMeasure != null ? !unitMeasure.equals(that.unitMeasure) : that.unitMeasure != null) return false;
 
         return true;
     }
@@ -80,7 +105,7 @@ public class Ingredient {
         int result = id;
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (amount != null ? amount.hashCode() : 0);
-        result = 31 * result + (unitmeasure != null ? unitmeasure.hashCode() : 0);
+        result = 31 * result + (unitMeasure != null ? unitMeasure.hashCode() : 0);
         return result;
     }
 }

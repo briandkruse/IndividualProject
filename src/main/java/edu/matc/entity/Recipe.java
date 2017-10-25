@@ -3,26 +3,43 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.ArrayList;
+import java.io.Serializable;
+import java.util.*;
+
 
 @Entity
-public class Recipe {
+@Table(name = "recipe")
+public class Recipe implements Serializable {
+
 
     private int id;
     private String name;
-    private Ingredient ingredient;
+    private String catagory;
+    private Set<Ingredient> ingredients = new HashSet<>();
+    private User user;
 
-    public Recipe(String name, Ingredient ingredient) {
+    // empty
+    public Recipe() {    }
+
+    // just name and catagory
+    public Recipe(User user, String name, String catagory) {
+        this.user = user;
         this.name = name;
-        this.ingredient = ingredient;
+        this.catagory = catagory;
     }
-    public Recipe() {
+
+    // with variables
+    public Recipe(User user, String name, String catagory, Set<Ingredient> ingredients) {
+        this.user = user;
+        this.name = name;
+        this.catagory = catagory;
+        this.ingredients = ingredients;
     }
 
     @Id
-    @GeneratedValue(generator="increment")
-    @GenericGenerator(name="increment", strategy = "increment")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name = "increment", strategy = "increment")
+    @Column(name = "recipeid", nullable = false)
     public int getId() {
         return id;
     }
@@ -32,13 +49,47 @@ public class Recipe {
     }
 
     @Basic
-    @Column(name = "name", nullable = true, length = 20)
+    @Column(name = "name", nullable = false, length = 20)
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Basic
+    @Column(name = "catagory", nullable = false)
+    public String getCatagory() {
+        return this.catagory;
+    }
+
+    public void setCatagory(String catagory) {
+        this.catagory = catagory;
+    }
+
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(
+            name = "recipeingredient",
+            joinColumns = {@JoinColumn(name = "recipeid", nullable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "ingredientid", nullable = false)}
+    )
+    public Set<Ingredient> getIngredients() {
+        return this.ingredients;
+    }
+
+    public void setIngredients(Set<Ingredient> ingredients) {
+        this.ingredients = ingredients;
+    }
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "login", nullable = false)
+    public User getUser() {
+        return this.user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override
@@ -60,13 +111,6 @@ public class Recipe {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
-
-    @Embedded
-    public Ingredient getIngredient() {
-        return this.ingredient;
-    }
-
-    public void setIngredient(Ingredient ingredient) {
-        this.ingredient = ingredient;
-    }
 }
+
+

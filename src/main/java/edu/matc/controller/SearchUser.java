@@ -28,7 +28,6 @@ import javax.servlet.http.*;
                     String login = request.getParameter("login");
                     logger.error(firstName + "firstname");
                     logger.error(lastName + "lastname");
-
                     User user = new User(firstName, lastName, login);
                     userDirectory.addUser(user);
                 } else if (request.getParameter("submit").equals("Delete")){
@@ -42,6 +41,7 @@ import javax.servlet.http.*;
                     userDirectory.updateUser(user);
                 }
 
+
         }
 
 
@@ -50,7 +50,6 @@ import javax.servlet.http.*;
 
             UserDirectory userDirectory = new UserDirectory();
             req.setAttribute("users", userDirectory.getAllUsers());
-            logger.error(userDirectory.getAllUsers().toString());
             RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
             dispatcher.forward(req, resp);
         }

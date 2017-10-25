@@ -12,6 +12,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
+import edu.matc.entity.User;
 import edu.matc.persistence.RecipeDao;
 import org.apache.log4j.*;
 
@@ -32,15 +33,15 @@ public class RecipeServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String url = "recipeServlet";
-        RequestDispatcher dispatcher =
-                getServletContext().getRequestDispatcher(url);
+        RecipeDao recipeDao = new RecipeDao();
+        request.setAttribute("recipe", recipeDao.getAllRecipes());
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/allRecipeResult.jsp");
         dispatcher.forward(request, response);
-        // Code down here would keep running...Java is multi-threaded.
+
     }
 
     protected void doPost(HttpServletRequest request,
-                          HttpServletResponse resp)
+                          HttpServletResponse response)
             throws ServletException,
             IOException {
 
@@ -51,9 +52,14 @@ public class RecipeServlet extends HttpServlet {
         logger.info("ingredientAmount:" + ingredientAmount);
         String unitMeasure = request.getParameter("unitmeasure1");
         Ingredient ingredient = new Ingredient(ingredientName, ingredientAmount, unitMeasure);
-        Recipe recipe = new Recipe(recipeName, ingredient);
+        Set<Ingredient> ingredients = new HashSet<>();
+        ingredients.add(ingredient);
+        User user = new User("temp", "temp", request.getRemoteUser());
+        Recipe recipe = new Recipe(user, recipeName, catagory, ingredients);
         RecipeDao recipeDao = new RecipeDao();
         recipeDao.addRecipe(recipe);
-
+        request.setAttribute("recipe", recipe);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/recipeSubmitConfirmation.jsp");
+        dispatcher.forward(request, response);
     }
 }

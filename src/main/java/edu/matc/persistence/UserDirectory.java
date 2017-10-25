@@ -69,32 +69,20 @@ public class UserDirectory {
         return user;
     }
 
-    public void deleteUser(String login) {
-
-        User user = new User();
-        user.setLogin(login);
-
+    public void deleteUser(String login){
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction transaction = null;
-        Session session = null;
-        try {
-            session = SessionFactoryProvider.getSessionFactory().openSession();
+        try{
             transaction = session.beginTransaction();
+            User user = (User)session.get(User.class, login);
             session.delete(user);
             transaction.commit();
-        } catch (HibernateException he){
-            if (transaction != null) {
-                try {
-                    transaction.rollback();
-                } catch (HibernateException he2) {
-                    log.error("Error rolling back delete of user id: " + login, he2);
-                }
-            }
-        } finally {
-            if (session != null) {
-                session.close();
-            }
+        }catch (HibernateException e) {
+            if (transaction!=null) transaction.rollback();
+            log.error("error deleting user", e);
+        }finally {
+            session.close();
         }
-
     }
 
     public void updateUser(User user) {

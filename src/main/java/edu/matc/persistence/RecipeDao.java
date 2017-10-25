@@ -1,13 +1,18 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.User;
+import edu.matc.entity.Ingredient;
 import edu.matc.entity.Recipe;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class RecipeDao {
     private final Logger log = Logger.getLogger(this.getClass());
@@ -68,10 +73,7 @@ public class RecipeDao {
         return recipe;
     }
 
-    public void deleteRecipe(int id) {
-
-        Recipe recipe = new Recipe();
-        recipe.setId(id);
+    public void deleteRecipe(Recipe recipe) {
 
         Transaction transaction = null;
         Session session = null;

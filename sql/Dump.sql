@@ -72,12 +72,12 @@ DROP TABLE IF EXISTS `ingredient`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `ingredient` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ingredientid` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(20) DEFAULT NULL,
   `amount` decimal(8,3) DEFAULT NULL,
-  `unitmeasure` varchar(10) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `unitmeasure` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`ingredientid`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,13 +97,14 @@ DROP TABLE IF EXISTS `recipe`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `recipe` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `recipeid` int(11) NOT NULL AUTO_INCREMENT,
   `login` varchar(20) NOT NULL,
   `name` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`id`),
+  `catagory` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`recipeid`),
   KEY `recipe_ibfk_1` (`login`),
   CONSTRAINT `recipe_ibfk_1` FOREIGN KEY (`login`) REFERENCES `users` (`login`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,12 +124,9 @@ DROP TABLE IF EXISTS `recipeingredient`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `recipeingredient` (
-  `recipeid` int(11) DEFAULT NULL,
-  `ingredientid` int(11) DEFAULT NULL,
-  KEY `recipeid` (`recipeid`),
-  KEY `ingredientid` (`ingredientid`),
-  CONSTRAINT `recipeingredient_ibfk_1` FOREIGN KEY (`recipeid`) REFERENCES `recipe` (`id`),
-  CONSTRAINT `recipeingredient_ibfk_2` FOREIGN KEY (`ingredientid`) REFERENCES `ingredient` (`id`)
+  `recipeid` int(11) NOT NULL,
+  `ingredientid` int(11) NOT NULL,
+  PRIMARY KEY (`recipeid`,`ingredientid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -138,6 +136,7 @@ CREATE TABLE `recipeingredient` (
 
 LOCK TABLES `recipeingredient` WRITE;
 /*!40000 ALTER TABLE `recipeingredient` DISABLE KEYS */;
+INSERT INTO `recipeingredient` VALUES (1,1),(2,2),(3,3),(4,4),(5,5),(6,6),(7,7);
 /*!40000 ALTER TABLE `recipeingredient` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -265,7 +264,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES ('admin','admin','admin','admin'),('bdkruse','Brian','Kruse',NULL),('Brian','Brian','Kruse',NULL);
+INSERT INTO `users` VALUES ('admin','admin','admin','admin');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -278,4 +277,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-12 18:10:58
+-- Dump completed on 2017-10-24 20:21:32

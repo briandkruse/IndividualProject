@@ -26,6 +26,7 @@
     </div>
     <%@include file="footer.jsp"%>
 </div>
+<a href ="recipeServlet">Search all recipes</a><br />
 </body>
 </html>
 <script src="javascript/newMeal.js" type="text/javascript" charset="utf-8"></script>
