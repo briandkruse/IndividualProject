@@ -26,8 +26,6 @@ import javax.servlet.http.*;
                     String firstName = request.getParameter("firstname");
                     String lastName = request.getParameter("lastname");
                     String login = request.getParameter("login");
-                    logger.error(firstName + "firstname");
-                    logger.error(lastName + "lastname");
                     User user = new User(firstName, lastName, login);
                     userDirectory.addUser(user);
                 } else if (request.getParameter("submit").equals("Delete")){

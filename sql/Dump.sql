@@ -130,15 +130,6 @@ CREATE TABLE `recipeingredient` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `recipeingredient`
---
-
-LOCK TABLES `recipeingredient` WRITE;
-/*!40000 ALTER TABLE `recipeingredient` DISABLE KEYS */;
-INSERT INTO `recipeingredient` VALUES (1,1),(2,2),(3,3),(4,4),(5,5),(6,6),(7,7);
-/*!40000 ALTER TABLE `recipeingredient` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `template`
@@ -278,3 +269,7 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2017-10-24 20:21:32
+
+GRANT ALL PRIVILEGES ON project.* TO 'bdkruse'@'ip-172-31-42-93.us-east-2.compute.internal' IDENTIFIED BY 'matcstudent' WITH GRANT OPTION;
+
+GRANT ALL PRIVILEGES ON project.* TO 'bdkruse'@'ip-172.31.42.93.us-east-2.compute.internal' IDENTIFIED BY 'matcstudent' WITH GRANT OPTION;

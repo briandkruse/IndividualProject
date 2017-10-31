@@ -34,7 +34,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.44</version>
+      <version>5.1.39</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/jstl/jstl -->
     <dependency>
@@ -42,12 +42,13 @@
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/com.java-adventures.glassfish.realm.salted/glassfish-jdbc-realm-salted -->
+    <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc -->
     <dependency>
-      <groupId>com.java-adventures.glassfish.realm.salted</groupId>
-      <artifactId>glassfish-jdbc-realm-salted</artifactId>
-      <version>0.2.0</version>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-jdbc</artifactId>
+      <version>9.0.1</version>
     </dependency>
+
 
   </dependencies>
 
