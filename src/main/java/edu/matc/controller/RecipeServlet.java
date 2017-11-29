@@ -5,6 +5,7 @@ import java.text.DecimalFormat;
 import java.util.*;
 import java.math.BigDecimal;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.entity.Ingredient;
 import edu.matc.entity.Recipe;
 
@@ -14,6 +15,7 @@ import javax.servlet.http.*;
 
 import edu.matc.entity.User;
 import edu.matc.persistence.RecipeDao;
+import edu.matc.persistence.UserDirectory;
 import org.apache.log4j.*;
 
 @WebServlet(
@@ -44,22 +46,24 @@ public class RecipeServlet extends HttpServlet {
                           HttpServletResponse response)
             throws ServletException,
             IOException {
-
-        String catagory = request.getParameter("catagory");
-        String recipeName = request.getParameter("name");
-        String ingredientName = request.getParameter("ingredient1");
-        BigDecimal ingredientAmount = new BigDecimal(request.getParameter("amount1"));
-        logger.info("ingredientAmount:" + ingredientAmount);
-        String unitMeasure = request.getParameter("unitmeasure1");
-        Ingredient ingredient = new Ingredient(ingredientName, ingredientAmount, unitMeasure);
-        Set<Ingredient> ingredients = new HashSet<>();
-        ingredients.add(ingredient);
-        User user = new User("temp", "temp", request.getRemoteUser());
-        Recipe recipe = new Recipe(user, recipeName, catagory, ingredients);
+        UserDirectory userDirectory = new UserDirectory();
         RecipeDao recipeDao = new RecipeDao();
+        User currentUser = userDirectory.getUser(request.getRemoteUser());
+        String jsonRecipe = "";
+        BufferedReader br = request.getReader();
+        String str;
+        while((str = br.readLine()) != null){
+            jsonRecipe += str;
+        }
+
+        ObjectMapper mapper = new ObjectMapper();
+        Recipe recipe = mapper.readValue(jsonRecipe, Recipe.class);
+        recipe.setUser(currentUser);
+        logger.info(recipe.toString());
         recipeDao.addRecipe(recipe);
-        request.setAttribute("recipe", recipe);
+
+/*        request.setAttribute("recipe", recipe);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/recipeSubmitConfirmation.jsp");
-        dispatcher.forward(request, response);
+        dispatcher.forward(request, response);*/
     }
 }

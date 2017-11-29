@@ -1,5 +1,6 @@
 package edu.matc.entity;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -15,7 +16,8 @@ public class Recipe implements Serializable {
     private int id;
     private String name;
     private String catagory;
-    private Set<Ingredient> ingredients = new HashSet<>();
+    /*@JsonDeserialize(as=ArrayList.class, contentAs=Ingredient.class)*/
+    private List<Ingredient> ingredients = new ArrayList<>();
     private User user;
 
     // empty
@@ -29,7 +31,7 @@ public class Recipe implements Serializable {
     }
 
     // with variables
-    public Recipe(User user, String name, String catagory, Set<Ingredient> ingredients) {
+    public Recipe(User user, String name, String catagory, List<Ingredient> ingredients) {
         this.user = user;
         this.name = name;
         this.catagory = catagory;
@@ -74,11 +76,11 @@ public class Recipe implements Serializable {
             joinColumns = {@JoinColumn(name = "recipeid", nullable = false)},
             inverseJoinColumns = {@JoinColumn(name = "ingredientid", nullable = false)}
     )
-    public Set<Ingredient> getIngredients() {
+    public List<Ingredient> getIngredients() {
         return this.ingredients;
     }
 
-    public void setIngredients(Set<Ingredient> ingredients) {
+    public void setIngredients(List<Ingredient> ingredients) {
         this.ingredients = ingredients;
     }
 
@@ -90,6 +92,16 @@ public class Recipe implements Serializable {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    @Override
+    public String toString() {
+        return "Recipe{" +
+                "name='" + name + '\'' +
+                ", catagory='" + catagory + '\'' +
+                ", ingredients=" + ingredients +
+                ", user=" + user +
+                '}';
     }
 
     @Override
@@ -111,6 +123,8 @@ public class Recipe implements Serializable {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
+
+
 }
 
 

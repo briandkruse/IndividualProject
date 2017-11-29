@@ -1,35 +1,51 @@
-function init() {
-    var addNewIngredientButton = document.getElementById("addnewingredient");
-    //set event handler
-    addNewIngredientButton.onclick = createIngredient;
-}
-    function createIngredient() {
-        //create elements
-        var ingredients = document.getElementById("ingredients")
-        var newIngredient = document.createElement("input");
-        var newAmount = document.createElement("input");
-        var newUnitMeasure = document.createElement("input");
-        var newIngredientText = document.createTextNode("Ingredient: ");
-        var newAmountText = document.createTextNode("Amount: ");
-        var newUnitMeasureText = document.createTextNode("Unit of Measure: ");
-        var lineBreak = document.createElement("br");
-        //set attributes
-        var increment = 2; //for attribute names
-        newIngredient.type="text";
-        newAmount.type="text";
-        newUnitMeasure.type="text";
-        newIngredient.name="ingredient" + increment;
-        newAmount.name="amount" + increment;
-        newUnitMeasure.name="unitmeasure" + increment;
-        //position elements
-        ingredients.appendChild(newIngredientText);
-        ingredients.appendChild(newIngredient);
-        ingredients.appendChild(newAmountText);
-        ingredients.appendChild(newAmount);
-        ingredients.appendChild(newUnitMeasureText);
-        ingredients.appendChild(newUnitMeasure);
-        ingredients.appendChild(lineBreak);
-        increment += 1;
+ $(document).ready(function() {
+     var increment = 2;
+     $("#addnewingredient").on("click", function() {
+         $("#ingredients").append("<div id='" + increment +
+              "' class='ingredientdiv'><label for name='ingredient'>Ingredient: </label>" +
+              "<input type='text' class='ingredient'>" +
+              "<label for name='amount'> Amount: </label>" +
+              "<input type='text' class='amount'>" +
+              "<label for name='unitmeasure'> Unit of Measure: </label>" +
+              "<input type='text' class='unitmeasure'><br /></div>");
+              increment++;
+     })
+
+     $("#submitbutton").on("click", function() {
+
+         var recipeName = $("#recipename").val();
+         var catagory = $("#catagory").val();
+         var jsonString = "{\"name\": \"" + recipeName
+                          + "\" ,\"catagory\": \"" + catagory + "\", "
+                          + "\"ingredients\": [ ";
+            //todo add error handling
+         $(".ingredientdiv").each(function(i){
+             var length = $(".ingredient").length;
+             var ingredientName = $(this).find(".ingredient").val();
+             var amount = $(this).find(".amount").val();
+             var unitMeasure = $(this).find(".unitmeasure").val();
+             jsonString += "{\"name\": \"" + ingredientName + "\", "
+                        + "\"amount\": " + amount + ", ";
+             if (i == (length - 1)) {
+                  jsonString += "\"unitMeasure\": \"" + unitMeasure + "\"}";
+             }  else {
+                  jsonString += "\"unitMeasure\": \"" + unitMeasure + "\"},";
+             }
+             //https://www.w3schools.com/js/tryit.asp?filename=tryjson_stringify
+         })
+         jsonString += '] }';
+         console.log(jsonString);
+
+         $.post("recipeServlet", jsonString, function() {
+
+            $("#submitlinks").append(
+                "<a href=\"profile\">Go to Account Management</a> <br />" +
+                "<a href=\"newPlan\">Start a New Grocery List</a>"
+            );
+
+         })
+     })
 
 
-}
+
+})

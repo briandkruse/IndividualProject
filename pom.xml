@@ -5,7 +5,7 @@
   <artifactId>IndividualProject</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>Individual Project</name>
+  <name>IndividualProject</name>
   <url>http://maven.apache.org</url>
 
   <dependencies>
@@ -34,7 +34,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.39</version>
+      <version>5.1.38</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/jstl/jstl -->
     <dependency>
@@ -48,12 +48,16 @@
       <artifactId>tomcat-jdbc</artifactId>
       <version>9.0.1</version>
     </dependency>
-
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.8.3</version>
+    </dependency>
 
   </dependencies>
 
   <build>
-    <finalName>Individual Project</finalName>
+    <finalName>IndividualProject</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

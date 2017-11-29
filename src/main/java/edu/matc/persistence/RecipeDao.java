@@ -18,20 +18,20 @@ public class RecipeDao {
     private final Logger log = Logger.getLogger(this.getClass());
 
     public List<Recipe> getAllRecipes() {
-        List<Recipe> recipes = new ArrayList<Recipe>();
-        Session session = null;
-        try {
-            session = SessionFactoryProvider.getSessionFactory().openSession();
-            recipes = session.createCriteria(Recipe.class).list();
-        } catch (HibernateException he) {
-            log.error("Error getting all recipes", he);
-        } finally {
-            if (session != null) {
-                session.close();
+            List<Recipe> recipes = new ArrayList<Recipe>();
+            Session session = null;
+            try {
+                session = SessionFactoryProvider.getSessionFactory().openSession();
+                recipes = session.createCriteria(Recipe.class).list();
+            } catch (HibernateException he) {
+                log.error("Error getting all recipes", he);
+            } finally {
+                if (session != null) {
+                    session.close();
+                }
             }
+            return recipes;
         }
-        return recipes;
-    }
 
     public Recipe getRecipe(int id) {
         Recipe recipe = null;

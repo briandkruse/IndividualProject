@@ -29,7 +29,4 @@
 <a href ="recipeServlet">Search all recipes</a><br />
 </body>
 </html>
-<script src="javascript/newMeal.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript" charset="utf-8">
-    init();
-</script>
+
