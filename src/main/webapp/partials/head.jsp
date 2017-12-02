@@ -7,8 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>${title}</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="javascript/newMeal.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="./javascript/newMeal.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./style.css">
 
 
     <!-- Latest compiled and minified JavaScript -->

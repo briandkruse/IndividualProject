@@ -1,3 +1,4 @@
+/*
 package edu.matc.persistence;
 
 import edu.matc.entity.User;
@@ -63,3 +64,4 @@ public class UserDirectoryTest {
 
 }
 
+*/

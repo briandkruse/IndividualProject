@@ -16,6 +16,7 @@ public class Recipe implements Serializable {
     private int id;
     private String name;
     private String catagory;
+    private String description;
     /*@JsonDeserialize(as=ArrayList.class, contentAs=Ingredient.class)*/
     private List<Ingredient> ingredients = new ArrayList<>();
     private User user;

@@ -33,10 +33,13 @@ public class ProfileServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        logger.info("GOT to profileservlet");
         UserDirectory userDirectory = new UserDirectory();
         RecipeDao recipeDao = new RecipeDao();
-        User currentUser = userDirectory.getUser(request.getRemoteUser());
+
+        HttpSession session = request.getSession();
+
+        String currentUser = (String)session.getAttribute("currentUser");
+        /*User currentUser = userDirectory.getUser(request.getRemoteUser());*/
         List<Recipe> recipes = recipeDao.getAllRecipes();
         request.setAttribute("user", currentUser);
         request.setAttribute("recipes", recipes);

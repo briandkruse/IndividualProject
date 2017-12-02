@@ -1,4 +1,4 @@
-<%@include file="head.jsp"%>
+<%@include file="partials/head.jsp"%>
 <html>
 <body>
 <FORM ACTION="j_security_check" METHOD="POST">

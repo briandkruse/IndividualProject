@@ -47,11 +47,12 @@ public class UserDirectory {
     public User addUser(User user) {
         Transaction transaction = null;
         Session session = null;
+        User newUser;
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
-            user = new User(user.getLogin(), user.getFirstName(), user.getLastName());
-            session.save(user);
+            newUser = new User(user.getFirstName(), user.getLastName(), user.getLogin(), user.getEmail(), user.getPassword());
+            session.save(newUser);
             transaction.commit();
         } catch (HibernateException he){
             if (transaction != null) {

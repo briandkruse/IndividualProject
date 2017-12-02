@@ -1,8 +1,8 @@
-<%@include file="head.jsp"%>
+<%@include file="../partials/head.jsp"%>
 <html>
 <body>
 <div id="wrapper">
-    <%@include file="navigation.jsp"%>
+    <%@include file="../partials/navigation.jsp"%>
     <h1>Speedy Grocery Shopper</h1>
     <div id="form">
         <form action="" method="POST">
@@ -27,11 +27,11 @@
             <input type="submit" value="Submit" name="submit" />
         </form>
     </div>
-    <%@include file="footer.jsp"%>
+    <%@include file="../partials/footer.jsp"%>
 </div>
 </body>
 </html>
-<script src="javascript/newTemplate.js" type="text/javascript" charset="utf-8"></script>
+<script src="newTemplate.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
     init();
 </script>

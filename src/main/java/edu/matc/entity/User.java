@@ -4,6 +4,7 @@ import com.sun.javafx.beans.IDProperty;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,6 +15,9 @@ public class User implements Serializable{
     private String login;
     private String firstName;
     private String lastName;
+    private String email;
+    private String password;
+    private Date joinDate;
     private Set<Recipe> recipes = new HashSet<>();
 
 
@@ -24,14 +28,22 @@ public class User implements Serializable{
     public User() {}
 
     // with user variables
-    public User(String firstName, String lastName, String login) {
+    public User(String firstName, String lastName, String login, String email) {
         this.setFirstName(firstName);
         this.setLastName(lastName);
         this.setLogin(login);
     }
 
+    // with password
+    public User(String firstName, String lastName, String login, String email, String password) {
+        this.setFirstName(firstName);
+        this.setLastName(lastName);
+        this.setLogin(login);
+        this.setPassword(password);
+    }
+
     // with collections
-    public User(String firstName, String lastName, String login, Set<Recipe> recipes) {
+    public User(String firstName, String lastName, String login, String email, String password, Set<Recipe> recipes) {
         this.setFirstName(firstName);
         this.setLastName(lastName);
         this.setLogin(login);
@@ -67,6 +79,36 @@ public class User implements Serializable{
 
     public void setLastName(String lastName) { this.lastName = lastName; }
 
+    @Basic
+    @Column(name = "password", nullable = false)
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Basic
+    @Column(name = "email", nullable = false)
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Basic
+    @Column(name = "joindate", nullable = false)
+    public Date getJoinDate() {
+        return joinDate;
+    }
+
+    public void setJoinDate(Date joinDate) {
+        this.joinDate = joinDate;
+    }
+
     @OneToMany(mappedBy = "user")
     public Set<Recipe> getRecipes() {
         return this.recipes;
@@ -84,4 +126,7 @@ public class User implements Serializable{
                 " Login: " + this.login;
         return userInformation;
     }
+
+
+
 }

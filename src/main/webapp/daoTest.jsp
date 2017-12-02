@@ -1,5 +1,6 @@
 <html>
 <body>
+<div class="wrapper">
 Add User:
 <form action="searchUser" method="POST" >
     <label for name="login">Login:</label>
@@ -32,5 +33,6 @@ Update user:
     <input type="text" name="updatelastname" />
     <input type="submit" value="Add" name="submit" />
 </form>
+</div>
 
 </html>
