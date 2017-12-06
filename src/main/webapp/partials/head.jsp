@@ -8,11 +8,9 @@
     <title>${title}</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./javascript/newMeal.js" type="text/javascript"></script>
+    <%--<script src="./javascript/newPlan.js" type="text/javascript"></script>--%>
+    <%--<script src="./javascript/newPlanjs.jsp" type="text/javascript"></script>--%>
+    <%--<jsp:include page="./javascript/newPlanjs.jsp" ​></jsp:include>--%>
     <link rel="stylesheet" href="./style.css">
 
-
-    <!-- Latest compiled and minified JavaScript -->
-<%--
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
---%>
 </head>

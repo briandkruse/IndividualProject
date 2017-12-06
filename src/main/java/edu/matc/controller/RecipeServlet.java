@@ -28,6 +28,7 @@ public class RecipeServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(this.getClass());
 
 
+
     public void init(ServletConfig config) {
 
     }
@@ -48,7 +49,8 @@ public class RecipeServlet extends HttpServlet {
             IOException {
         UserDirectory userDirectory = new UserDirectory();
         RecipeDao recipeDao = new RecipeDao();
-        User currentUser = userDirectory.getUser(request.getRemoteUser());
+        HttpSession session = request.getSession();
+        User user = (User)request.getAttribute("currentUser");
         String jsonRecipe = "";
         BufferedReader br = request.getReader();
         String str;
@@ -58,7 +60,7 @@ public class RecipeServlet extends HttpServlet {
 
         ObjectMapper mapper = new ObjectMapper();
         Recipe recipe = mapper.readValue(jsonRecipe, Recipe.class);
-        recipe.setUser(currentUser);
+        recipe.setUser(user);
         logger.info(recipe.toString());
         recipeDao.addRecipe(recipe);
 

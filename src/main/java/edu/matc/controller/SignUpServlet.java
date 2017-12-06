@@ -44,20 +44,22 @@ public class SignUpServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password1 = request.getParameter("password1");
         String password2 = request.getParameter("password2");
-
+        User user;
 
         HttpSession session;
         if (password1.equals(password2)) {
-            User user = new User(firstName, lastName, login, email, password1);
+            user = new User(firstName, lastName, login, email, password1);
             UserDirectory userDao = new UserDirectory();
             userDao.addUser(user);
-            session = request.getSession();
-            session.setAttribute("currentUser", login);
+            session = request.getSession(true);
+            session.setAttribute("currentUser", user);
         } else {
             logger.error("passwords did not match");
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/profile");
+
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
         dispatcher.forward(request, response);
 
 

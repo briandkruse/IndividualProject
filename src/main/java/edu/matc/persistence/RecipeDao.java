@@ -4,9 +4,8 @@ import edu.matc.entity.User;
 import edu.matc.entity.Ingredient;
 import edu.matc.entity.Recipe;
 import org.apache.log4j.Logger;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
+import org.hibernate.*;
+import org.hibernate.criterion.Restrictions;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -119,6 +118,26 @@ public class RecipeDao {
                 session.close();
             }
         }
+    }
+
+    public List<String> getUserRecipes(User user) {
+        List<String> recipes = new ArrayList<String>();
+        Session session = null;
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+
+            String sql = "SELECT name FROM recipe WHERE login='" + user.getLogin()+ "'";
+            SQLQuery query = session.createSQLQuery(sql);
+            query.setResultTransformer(Criteria.ALIAS_TO_ENTITY_MAP);
+            recipes = query.list();
+        } catch (HibernateException he) {
+            log.error("Error getting all recipes", he);
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+        return recipes;
     }
 
 }

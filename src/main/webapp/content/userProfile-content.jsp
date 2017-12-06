@@ -1,18 +1,16 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<c:set var="title" scope="request" value="Manage Your Account" />
 
-
-<h1>${user.firstName}'s Profile</h1>
+<h1>${currentUser.firstName}'s Profile</h1>
 <div id="userdata">
-    <p>Login: ${user.login}</p>
-    <p>First Name: ${user.firstName}</p>
-    <p>Last Name: ${user.lastName}</p>
-    <p>Email address: ${user.email}</p>
+    <p>Login: ${currentUser.login}</p>
+    <p>First Name: ${currentUser.firstName}</p>
+    <p>Last Name: ${currentUser.lastName}</p>
+    <p>Email address: ${currentUser.email}</p>
     <p>Join Date: </p>
 </div>
 
 <div id="userrecipe">
-    <h2>${user.firstName}'s Recipes</h2>
+    <h2>${currentUser.firstName}'s Recipes</h2>
 
 
     <table>

@@ -9,7 +9,7 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>admin</web-resource-name>
-      <url-pattern>/admin.jsp</url-pattern>
+      <url-pattern>/profile</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>administrator</role-name>
@@ -36,7 +36,7 @@
     </auth-constraint>
   </security-constraint>
 
-  <security-constraint>
+<!--  <security-constraint>
     <web-resource-collection>
       <web-resource-name>profile</web-resource-name>
       <url-pattern>/profile.jsp</url-pattern>
@@ -44,7 +44,7 @@
     <auth-constraint>
       <role-name>administrator</role-name>
     </auth-constraint>
-  </security-constraint>
+  </security-constraint>-->
 
   <security-role>
     <role-name>administrator</role-name>
