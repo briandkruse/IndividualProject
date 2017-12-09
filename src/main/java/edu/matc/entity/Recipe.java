@@ -71,7 +71,7 @@ public class Recipe implements Serializable {
         this.catagory = catagory;
     }
 
-    @ManyToMany(cascade = {CascadeType.ALL})
+    @ManyToMany(cascade = {CascadeType.ALL}, fetch=FetchType.EAGER)
     @JoinTable(
             name = "recipeingredient",
             joinColumns = {@JoinColumn(name = "recipeid", nullable = false)},
@@ -101,7 +101,6 @@ public class Recipe implements Serializable {
                 "name='" + name + '\'' +
                 ", catagory='" + catagory + '\'' +
                 ", ingredients=" + ingredients +
-                ", user=" + user +
                 '}';
     }
 
@@ -124,7 +123,6 @@ public class Recipe implements Serializable {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
-
 
 }
 

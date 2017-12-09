@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<script src="./javascript/newRecipe.js" type="text/javascript"></script>
 <c:set var="title" scope="request" value="Create a New Recipe" />
 
 <h1>Speedy Grocery Shopper</h1>
@@ -21,7 +22,7 @@
         </div>
         <input type="button" id="addnewingredient" value="Add Another Ingredient">
         <hr />
-        <input type="button" value="Submit" name="submit">
+        <input type="button" value="Submit" name="submit" id="submit">
     </form>
     <a href ="recipeServlet">Search all recipes</a><br />
     <div id="submitlinks">

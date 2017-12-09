@@ -42,6 +42,15 @@ public class RecipeDaoTest {
         assertEquals("Recipe was not deleted from the database", initialRecipeCount - 1, recipeDao.getAllRecipes().size());
     }
 
+/*
+    @Test
+    public void getUserRecipesTest() {
+        UserDirectory userDirectory = new UserDirectory();
+        List<Recipe> recipes = recipeDao.getUserRecipes(userDirectory.getUser("admin"));
+        assertEquals("test", "??", recipes.toString());
+    }
+*/
+
     public Recipe createRecipe() {
         UserDirectory userDirectory = new UserDirectory();
         User user = userDirectory.getUser("admin");
@@ -52,5 +61,6 @@ public class RecipeDaoTest {
         Recipe recipe = new Recipe(user, "MacNCheeze", "pasta", ingredients);
         return recipe;
     }
+
 
 }

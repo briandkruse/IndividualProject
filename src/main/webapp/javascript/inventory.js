@@ -1,11 +1,9 @@
 $(document).ready(function() {
-
+    console.log("entered javascript");
     var jsonString = '[';
     $("#submit").on("click", function() {
-        $(".choice option:selected").each(function (i) {
-            /*recipeArray.push($(this).val());*/
-            var length = $(".choice option:selected").length;
-
+        var length = $(".checkbox:checked").length;
+        $(".checkbox:checked").each(function (i) {
             if (i == (length - 1)) {
                 jsonString += $(this).val();
             } else {
@@ -16,9 +14,9 @@ $(document).ready(function() {
         console.log(jsonString);
 
 
-    $.post("inventory", jsonString, function() {
-        window.location.href = "/IndividualProject/inventory.jsp";
-    })
+        $.post("shoppingList", jsonString, function() {
+            window.location.href = "/IndividualProject/shoppingList.jsp";
+        })
     })
 
 

@@ -22,11 +22,11 @@
 
         </tr>
 
-        <c:forEach var = "recipes" items="${recipes}">
+        <c:forEach var = "recipe" items="${recipes}">
             <tr>
-                <td>${recipes.name}</td>
-                <td>${recipes.catagory}</td>
-                <td><a href='processProfile?id=${recipes.id}'>Delete</a></td>
+                <td>${recipe.name}</td>
+                <td>${recipe.catagory}</td>
+                <td><a href='processProfile?id=${recipe.id}'>Delete</a></td>
             </tr>
         </c:forEach>
 

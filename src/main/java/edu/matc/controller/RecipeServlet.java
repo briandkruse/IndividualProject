@@ -47,10 +47,12 @@ public class RecipeServlet extends HttpServlet {
                           HttpServletResponse response)
             throws ServletException,
             IOException {
+        logger.info("recipeservlet");
         UserDirectory userDirectory = new UserDirectory();
         RecipeDao recipeDao = new RecipeDao();
-        HttpSession session = request.getSession();
-        User user = (User)request.getAttribute("currentUser");
+        /*HttpSession session = request.getSession();*/
+        User user = (User)request.getSession().getAttribute("currentUser");
+        logger.info(user.toString());
         String jsonRecipe = "";
         BufferedReader br = request.getReader();
         String str;

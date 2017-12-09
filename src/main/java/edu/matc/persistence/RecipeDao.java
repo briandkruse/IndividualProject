@@ -120,7 +120,7 @@ public class RecipeDao {
         }
     }
 
-    public List<String> getUserRecipes(User user) {
+/*    public List<String> getUserRecipes(User user) {
         List<String> recipes = new ArrayList<String>();
         Session session = null;
         try {
@@ -138,6 +138,6 @@ public class RecipeDao {
             }
         }
         return recipes;
-    }
+    }*/
 
 }

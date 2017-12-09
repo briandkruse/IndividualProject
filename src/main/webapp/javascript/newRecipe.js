@@ -11,8 +11,7 @@
               increment++;
      })
 
-     $("#submitbutton").on("click", function() {
-
+     $("#submit").on("click", function() {
          var recipeName = $("#recipename").val();
          var catagory = $("#catagory").val();
          var jsonString = "{\"name\": \"" + recipeName
@@ -34,14 +33,8 @@
              //https://www.w3schools.com/js/tryit.asp?filename=tryjson_stringify
          })
          jsonString += '] }';
-         console.log(jsonString);
-
          $.post("recipeServlet", jsonString, function() {
 
-            $("#submitlinks").append(
-                "<a href=\"profile\">Go to Account Management</a> <br />" +
-                "<a href=\"newPlan\">Start a New Grocery List</a>"
-            );
 
          })
      })

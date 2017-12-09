@@ -1,15 +1,16 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<script src="./javascript/newPlan.js" type="text/javascript"></script>
 
 <%--JAVASRIPT EMBED--%>
 <%--jstl does not process in an external javascript file--%>
 <%--workaround: script directly on jsp page--%>
 
-<form id="plan">
+<form id="plan"<%-- action="/inventory" method="GET"--%> >
 
 </form>
 <div id="buttondiv">
     <input type="button" id="newmeal" value="Start new meal"><br />
-    <input type="button" id="submit" value="Submit">
+    <input type="submit" id="submit" value="Submit">
 </div>
 
 <script>
@@ -52,11 +53,13 @@
 
     function appendSelectElement(){
         return '<label for="choice' + choiceNumber + '" >Choice ' + choiceNumber + ':</label>' +
-            '<select id="choice' + choiceNumber + '" name="choice' + choiceNumber + ' class="choice">' +
+            '<select id="choice' + choiceNumber + '" name="choice' + choiceNumber + '" class="choice">' +
             '<option value="all">Choose one</option>' +
             '<c:forEach var="recipe" items="${recipes}">'   +
-            '<option value="${recipe.id}">${recipe.id}</option>' +
+            '<option value="${recipe.id}">${recipe.name}</option>' +
             '</c:forEach>' +
             '</select><br />';
     }
+
+
 </script>

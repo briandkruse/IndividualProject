@@ -18,7 +18,7 @@ import org.apache.log4j.*;
         urlPatterns = "/newPlan"
 )
 public class PlanServlet extends HttpServlet {
-
+    private final Logger logger = Logger.getLogger(this.getClass());
     public void init(ServletConfig config) {
     }
 
@@ -28,11 +28,22 @@ public class PlanServlet extends HttpServlet {
         RecipeDao recipeDao = new RecipeDao();
         UserDirectory userDirectory = new UserDirectory();
 
-        User user = (User)session.getAttribute("currentUser");
-        System.out.println(user.toString());
-        List<String> recipes = recipeDao.getUserRecipes(user);
+        User user = (User)request.getSession().getAttribute("currentUser");
+
+
+        //workaround, can't get objects through dao, can't identify login
+        List<Recipe> recipes = recipeDao.getAllRecipes();
+
+        List<Integer> removeList = new ArrayList<Integer>();
+        for (Recipe recipe : recipes) {
+            if (!recipe.getUser().getLogin().equals(user.getLogin())) {
+                removeList.add(recipe.getId());
+            }
+        }
+        recipes.removeAll(removeList);
+
+
         request.setAttribute("recipes", recipes);
-        System.out.println(recipes.toString());
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/newPlan.jsp");
         dispatcher.forward(request, response);
