@@ -1,12 +1,12 @@
 package edu.matc.entity;
 
 import com.sun.javafx.beans.IDProperty;
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name = "users")
@@ -17,9 +17,7 @@ public class User implements Serializable{
     private String lastName;
     private String email;
     private String password;
-    private Date joinDate;
-    private Set<Recipe> recipes = new HashSet<>();
-
+    private List<Recipe> recipes = new ArrayList<>();
 
 
 
@@ -29,25 +27,31 @@ public class User implements Serializable{
 
     // with user variables
     public User(String firstName, String lastName, String login, String email) {
-        this.setFirstName(firstName);
-        this.setLastName(lastName);
-        this.setLogin(login);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.login = login;
+        this.email = email;
     }
 
     // with password
     public User(String firstName, String lastName, String login, String email, String password) {
-        this.setFirstName(firstName);
-        this.setLastName(lastName);
-        this.setLogin(login);
-        this.setPassword(password);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.login = login;
+        this.email = email;
+        this.password= password;
+
     }
 
     // with collections
-    public User(String firstName, String lastName, String login, String email, String password, Set<Recipe> recipes) {
-        this.setFirstName(firstName);
-        this.setLastName(lastName);
-        this.setLogin(login);
-        this.setRecipes(recipes);
+    public User(String firstName, String lastName, String login, String email, String password, List<Recipe> recipes) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.login = login;
+        this.email = email;
+        this.password= password;
+        this.recipes = recipes;
+
     }
 
     @Id
@@ -99,34 +103,27 @@ public class User implements Serializable{
         this.email = email;
     }
 
-    @Basic
-    @Column(name = "joindate", nullable = false)
-    public Date getJoinDate() {
-        return joinDate;
-    }
-
-    public void setJoinDate(Date joinDate) {
-        this.joinDate = joinDate;
-    }
-
-    @OneToMany(mappedBy = "user")
-    public Set<Recipe> getRecipes() {
+    @OneToMany(mappedBy = "user", fetch=FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
+    public List<Recipe> getRecipes() {
         return this.recipes;
     }
 
-    public void setRecipes(Set<Recipe> recipes) {
+    public void setRecipes(List<Recipe> recipes) {
         this.recipes = recipes;
     }
 
 
-    public String toString () {
-        String userInformation =
-                "First Name:" + this.firstName +
-                " Last Name: " + this.lastName +
-                " Login: " + this.login;
-        return userInformation;
+    @Override
+    public String toString() {
+        return "User{" +
+                "login='" + login + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", recipes=" + recipes +
+                '}';
     }
-
 
 
 }

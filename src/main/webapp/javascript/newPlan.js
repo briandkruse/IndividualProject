@@ -3,7 +3,6 @@ $(document).ready(function() {
     var jsonString = '[';
     $("#submit").on("click", function() {
         $(".choice option:selected").each(function (i) {
-            /*recipeArray.push($(this).val());*/
             var length = $(".choice option:selected").length;
 
             if (i == (length - 1)) {

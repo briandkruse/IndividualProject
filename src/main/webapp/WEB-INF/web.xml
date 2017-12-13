@@ -13,6 +13,7 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>administrator</role-name>
+      <role-name>user</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -23,6 +24,7 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>administrator</role-name>
+      <role-name>user</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -33,6 +35,7 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>administrator</role-name>
+      <role-name>user</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -43,12 +46,17 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>administrator</role-name>
+      <role-name>user</role-name>
     </auth-constraint>
   </security-constraint>
 
   <security-role>
     <role-name>administrator</role-name>
   </security-role>
+  <security-role>
+    <role-name>user</role-name>
+  </security-role>
+
 
   <!-- Tell the server to use form-based authentication. -->
   <login-config>

@@ -1,6 +1,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<c:set var="title" value="Create a Shopping List" />
 <%@include file="partials/head.jsp"%>
+
+
 <html>
 <body>
 <div class="wrapper">

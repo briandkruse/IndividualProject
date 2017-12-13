@@ -17,7 +17,6 @@ public class Recipe implements Serializable {
     private String name;
     private String catagory;
     private String description;
-    /*@JsonDeserialize(as=ArrayList.class, contentAs=Ingredient.class)*/
     private List<Ingredient> ingredients = new ArrayList<>();
     private User user;
 
@@ -38,6 +37,16 @@ public class Recipe implements Serializable {
         this.catagory = catagory;
         this.ingredients = ingredients;
     }
+    // with variables and id
+    public Recipe(User user, String name, String catagory, List<Ingredient> ingredients, int id) {
+        this.user = user;
+        this.name = name;
+        this.catagory = catagory;
+        this.ingredients = ingredients;
+        this.id = id;
+    }
+
+
 
     @Id
     @GeneratedValue(generator = "increment")

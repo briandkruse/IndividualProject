@@ -1,7 +1,8 @@
-/*
+
 package edu.matc.persistence;
 
 import edu.matc.entity.User;
+import edu.matc.entity.UserRole;
 import org.apache.log4j.Logger;
 import org.junit.*;
 
@@ -17,7 +18,7 @@ public class UserDirectoryTest {
     int initialUserCount;
 
 
-    @Test
+  /*  @Test
     public void getAllUsersTest() throws Exception {
         List<User> users = userDirectory.getAllUsers();
         assertTrue("Failed to get all users" + users.size(), users.size() > 0);
@@ -60,8 +61,16 @@ public class UserDirectoryTest {
         userDirectory.updateUser(user);
         assertEquals("user not saved correctly", user.toString(), userDirectory.getUser("updatetest").toString());
         userDirectory.deleteUser("updatetest");
-    }
+    }*/
+
+    /*@Test
+    public void addRoleTest() {
+        UserRole role = new UserRole("test", "user");
+        userDirectory.addRole(role);
+        assertEquals("Role was not added to the database", initialUserCount +1, userDirectory.getAllUsers().size());
+
+    }*/
 
 }
 
-*/
+

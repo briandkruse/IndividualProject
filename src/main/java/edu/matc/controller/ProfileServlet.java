@@ -42,7 +42,8 @@ public class ProfileServlet extends HttpServlet {
         session.setAttribute("currentUser", user);
 
         List<Recipe> recipes = recipeDao.getAllRecipes();
-        logger.info(recipes.toString() + "profile recipes variable");        request.setAttribute("recipes", recipes);
+        session.setAttribute("recipes", recipes);
+        //todo get user recipe
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/userProfile.jsp");
         dispatcher.forward(request, response);

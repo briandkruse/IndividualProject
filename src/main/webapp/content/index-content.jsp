@@ -1,14 +1,18 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<script src="./javascript/newUser.js" type="text/javascript"></script>
+<%@include file="/partials/carousel.jsp"%>
+<div class="content">
 
-<h1>Speedy Grocery Shopper</h1>
-<div id="map">
-    <div id="groceryimage">
-    </div>
-</div>
-<div id="appinfo">
-    <p>Information about the application goes here</p>
-    <p>Lorem ipsum dolor sit amet, eum eu utamur hendrerit abhorreant. Cum postea deleniti indoctum te. No vis
-        graece debitis. Nominavi signiferumque mei no, eos possit aliquip similique at. Ex usu velit accusamus
-        repudiandae, qui ad tale malis essent, nulla prodesset nec ut. Eos pertinacia definitiones ad. Affert
-        neglegentur ea pri.</p>
+    <p>Do you need to get groceries?</p>
+    <p>
+        This intent of this application is to expidite the process of
+        making a grocery list. This is accomplished by storing your recipe
+        details in our database, and then allowing you to create a list using
+        those recipes, filter which groceries you already have, then customize
+        your final list to best fit your shopping needs.
+    </p>
+    <p>
+        Please sign or log in above and give this application a try. I hope
+        you enjoy it!
+    </p>
 </div>

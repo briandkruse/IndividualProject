@@ -1,11 +1,13 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.User;
+import edu.matc.entity.UserRole;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import javax.management.relation.Role;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,7 +53,8 @@ public class UserDirectory {
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
-            newUser = new User(user.getFirstName(), user.getLastName(), user.getLogin(), user.getEmail(), user.getPassword());
+            newUser = new User(user.getFirstName(), user.getLastName(), user.getLogin(), user.getEmail(), user.getPassword(), user.getRecipes());
+            log.info(newUser.toString());
             session.save(newUser);
             transaction.commit();
         } catch (HibernateException he){
@@ -108,5 +111,32 @@ public class UserDirectory {
             }
         }
     }
+
+    public UserRole addRole(UserRole role) {
+        Transaction transaction = null;
+        Session session = null;
+        UserRole newRole;
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            transaction = session.beginTransaction();
+            newRole = new UserRole(role.getLogin(), role.getRoleName() );
+            session.save(role);
+            transaction.commit();
+        } catch (HibernateException he){
+            if (transaction != null) {
+                try {
+                    transaction.rollback();
+                } catch (HibernateException he2) {
+                    log.error("Error rolling back save of role: " + role, he2);
+                }
+            }
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+        return role;
+    }
+
 
 }

@@ -1,23 +1,146 @@
 .wrapper {
-    width: 900px;
-    border: black 1px solid;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 20px 20px 10px;
-    min-height: 600px;
+    background-color: #fff;
+}
+
+#navigationloggedout a {
+    width: 49.7%;
+    border: 1px black solid;
+    vertical-align: top;
+    display: inline-block;
+    height: 50px;
+}
+
+#navigationloggedin a {
+    width: 18%;
+    border: 1px black solid;
+    display: inline-block;
+    vertical-align: top;
+    height: 50px;
 }
 
 #navigation {
+    width: 100%;
+    background-color: black;
     text-align: center;
+    display: inline-block;
 }
 
-#mapplaceholder {
-    height: 500px;
-    width: 800px;
-    background-color: red;
-    margin: 10px auto 10px auto;
+#navigationloggedin div {
+    vertical-align: middle;
 }
 
-#appinfo {
-    margin: 10px 0px 10px 0px;
+#navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 0px;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+#navigation div {
+
+  }
+
+#navigation a:hover {
+    border: 1px solid white;
+    background-color: grey;
+}
+
+.content, #footer {
+    margin: 10px 30px 10px 30px;
+}
+
+body {
+    background-image: url("./images/cuttingboardbackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.fotorama {
+    margin: 0px auto 0px auto;
+    background-color: black;
+    width: 100%
+}
+
+th {
+    text-align: left;
+
+}
+table.dataTable thead th, table.dataTable thead td {
+    padding: 5px 0px 5px 8px;
+}
+
+hr {
+    margin: 15px 0px 15px 0px;
+}
+
+#footer {
+    min-height: 60px;
+}
+
+.sortingredient {
+    font-size: 20px;
+    width: max-content;
+
+}
+
+
+.shoppinglist {
+    font-family: 'Kalam', cursive;
+    background-image: url(./images/Lined-Paper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: -20px -1px 0px -1px;
+    padding-left: 6em;
+    padding-top: 2em;
+}
+
+.formcontent input[type='text']{
+    display: inline-block;
+    width: 20%;
+}
+
+.formcontent input[type='button'] {
+    margin: 10px 5px 10px 0px;
+}
+
+.formcontent label {
+    display: inline-block;
+    width: 8%;
+}
+
+#userdata {
+    width: 45%;
+    float: left;
+    display:inline-block;
+}
+
+#edamam {
+    width: 45%;
+    float: right;
+    display: inline-block
+}
+
+#userrecipe {
+    clear: both;
+}
+
+/*Print Media Query*/
+@media print {
+    #header, #footer, #navigation, img {
+        display : none;
+    }
+    @page {
+        size: auto;  margin: 0mm;
+    }
+
 }

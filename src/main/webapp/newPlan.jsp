@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<c:set var="title" value="Search Results" />
+<c:set var="title" value="Create a New Plan" />
 <%@include file="partials/head.jsp"%>
 
 
