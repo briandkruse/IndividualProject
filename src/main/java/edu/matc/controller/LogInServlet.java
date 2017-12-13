@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * The type Log in servlet.
+ */
 @WebServlet(
         name = "LogInServlet",
         urlPatterns = "/logIn"
@@ -25,7 +28,6 @@ public class LogInServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
 
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/profile");

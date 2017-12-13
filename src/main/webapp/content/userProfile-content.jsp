@@ -2,8 +2,6 @@
 <script src="./javascript/profile.js"></script>
 
 
-
-
 <div id="userdata" class="content">
     <h1>${currentUser.firstName}'s Profile</h1>
     <p>Login: ${currentUser.login}</p>
@@ -25,22 +23,22 @@
 
     <table id="datatable" class="display">
         <thead>
-            <tr>
-                <th>Recipe Name</th>
-                <th>Catagory</th>
-                <th>Delete</th>
-                <th>Edit</th>
-            </tr>
+        <tr>
+            <th>Recipe Name</th>
+            <th>Catagory</th>
+            <th>Delete</th>
+            <th>Edit</th>
+        </tr>
         </thead>
         <tbody>
-            <c:forEach var = "recipe" items="${recipes}">
-                <tr>
-                    <td>${recipe.name}</td>
-                    <td>${recipe.catagory}</td>
-                    <td><a href='processProfile?id=${recipe.id}'>Delete</a></td>
-                    <td><input type="button" name="${recipe.id}" value="Update" class="update"></td>
-                </tr>
-            </c:forEach>
+        <c:forEach var="recipe" items="${recipes}">
+            <tr>
+                <td>${recipe.name}</td>
+                <td>${recipe.catagory}</td>
+                <td><a href='processProfile?id=${recipe.id}'>Delete</a></td>
+                <td><input type="button" name="${recipe.id}" value="Update" class="update"></td>
+            </tr>
+        </c:forEach>
         </tbody>
     </table>
 
@@ -48,5 +46,5 @@
     <div id="updaterecipe" class="formcontent">
 
     </div>
-${confirm}
+    ${confirm}
 </div>

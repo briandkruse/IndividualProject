@@ -1,9 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<c:set var="title" value="Search Results" />
-<%@include file="partials/head.jsp"%>
+<c:set var="title" value="Search Results"/>
+<%@include file="partials/head.jsp" %>
 
 
-<html><body>
+<html>
+<body>
 
 <div class="wrapper">
     <h2>Search Results: </h2>
@@ -15,7 +16,7 @@
 
         </tr>
 
-        <c:forEach var = "users" items="${users}">
+        <c:forEach var="users" items="${users}">
             <tr>
                 <td>${users.login}</td>
                 <td>${users.firstName}</td>

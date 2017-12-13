@@ -1,4 +1,4 @@
 <div id="footer">
-    <hr />
+    <hr/>
     <p>Created by Brian Kruse, 2017</p>
 </div>

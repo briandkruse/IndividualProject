@@ -7,9 +7,10 @@
 
     <div class="content" id="print">
         <ul class="sortable sortingredient">
-        <c:forEach items="${ingredients}" var="ingredient">
-             <li><fmt:formatNumber type="number" minFractionDigits="0" maxFractionDigits="2" value="${ingredient.amount}" /> ${ingredient.unitMeasure} ${ingredient.name}</li>
-        </c:forEach>
+            <c:forEach items="${ingredients}" var="ingredient">
+                <li><fmt:formatNumber type="number" minFractionDigits="0" maxFractionDigits="2"
+                                      value="${ingredient.amount}"/> ${ingredient.unitMeasure} ${ingredient.name}</li>
+            </c:forEach>
         </ul>
     </div>
     <input type="button" value="Add Note" name="newitem" id="newitem">

@@ -1,9 +1,7 @@
 package edu.matc.controller;
 
 import edu.matc.entity.Recipe;
-import edu.matc.entity.User;
 import edu.matc.persistence.RecipeDao;
-import edu.matc.persistence.UserDirectory;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -14,10 +12,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 import static java.lang.Integer.parseInt;
 
+/**
+ * The type Process profile.
+ */
 @WebServlet(
         name = "ProcessProfile",
         urlPatterns = "/processProfile"

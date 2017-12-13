@@ -1,7 +1,5 @@
 package edu.matc.controller;
 
-import edu.matc.entity.User;
-import edu.matc.persistence.UserDirectory;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -14,6 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * The type Log out servlet.
+ */
 @WebServlet(
         name = "LogOutServlet",
         urlPatterns = "/logOut"
@@ -23,7 +24,6 @@ public class LogOutServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(this.getClass());
 
     public void init(ServletConfig config) {
-
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)

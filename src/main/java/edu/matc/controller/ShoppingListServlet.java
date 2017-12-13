@@ -3,9 +3,7 @@ package edu.matc.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.TypeFactory;
 import edu.matc.entity.Ingredient;
-import edu.matc.entity.Recipe;
 import edu.matc.persistence.IngredientDao;
-import edu.matc.persistence.RecipeDao;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -21,6 +19,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Shopping list servlet.
+ */
 @WebServlet(
         name = "ShopppingList",
         urlPatterns = "/shoppingList"
@@ -41,7 +42,7 @@ public class ShoppingListServlet extends HttpServlet {
         String jsonString = "";
         BufferedReader br = request.getReader();
         String str;
-        while((str = br.readLine()) != null){
+        while ((str = br.readLine()) != null) {
             jsonString += str;
         }
         logger.info(jsonString);
@@ -51,7 +52,7 @@ public class ShoppingListServlet extends HttpServlet {
         List<Integer> list = mapper.readValue(jsonString, TypeFactory.defaultInstance().constructCollectionType(List.class, Integer.class));
 
         List<Ingredient> ingredientArray = new ArrayList<Ingredient>();
-        for(Integer ingredientId : list) {
+        for (Integer ingredientId : list) {
             ingredientArray.add(recipeDao.getIngredient(ingredientId));
         }
 

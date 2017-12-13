@@ -1,32 +1,32 @@
 package edu.matc.controller;
 
-import java.io.*;
-import java.text.DecimalFormat;
-import java.util.*;
-import java.math.BigDecimal;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.matc.entity.Ingredient;
 import edu.matc.entity.Recipe;
-
-import javax.servlet.*;
-import javax.servlet.annotation.*;
-import javax.servlet.http.*;
-
 import edu.matc.entity.User;
 import edu.matc.persistence.RecipeDao;
 import edu.matc.persistence.UserDirectory;
-import org.apache.log4j.*;
+import org.apache.log4j.Logger;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
+import java.io.IOException;
+
+/**
+ * The type Recipe servlet.
+ */
 @WebServlet(
         name = "RecipeServlet",
         urlPatterns = "/recipeServlet"
-
-
 )
+
 public class RecipeServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(this.getClass());
-
 
 
     public void init(ServletConfig config) {
@@ -47,15 +47,14 @@ public class RecipeServlet extends HttpServlet {
                           HttpServletResponse response)
             throws ServletException,
             IOException {
-        UserDirectory userDirectory = new UserDirectory();
+
         RecipeDao recipeDao = new RecipeDao();
-        User user = (User)request.getSession().getAttribute("currentUser");
+        User user = (User) request.getSession().getAttribute("currentUser");
         logger.info(user.toString());
-        //todo double check this is the best way
         String jsonRecipe = "";
         BufferedReader br = request.getReader();
         String str;
-        while((str = br.readLine()) != null){
+        while ((str = br.readLine()) != null) {
             jsonRecipe += str;
         }
 
@@ -66,7 +65,7 @@ public class RecipeServlet extends HttpServlet {
         recipeDao.addRecipe(recipe);
 
         request.setAttribute("recipe", recipe);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/recipe.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/newRecipe.jsp");
         dispatcher.forward(request, response);
     }
 }

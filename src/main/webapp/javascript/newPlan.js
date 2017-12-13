@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     var jsonString = '[';
-    $("#submit").on("click", function() {
+    $("#submit").on("click", function () {
         $(".choice option:selected").each(function (i) {
             var length = $(".choice option:selected").length;
 
@@ -15,9 +15,9 @@ $(document).ready(function() {
         console.log(jsonString);
 
 
-    $.post("inventory", jsonString, function() {
-        window.location.href = "/IndividualProject/inventory.jsp";
-    })
+        $.post("inventory", jsonString, function () {
+            window.location.href = "/IndividualProject/inventory.jsp";
+        })
     })
 
 

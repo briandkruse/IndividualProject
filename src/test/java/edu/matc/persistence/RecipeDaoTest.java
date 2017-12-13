@@ -17,6 +17,7 @@ public class RecipeDaoTest {
 
     private final Logger log = Logger.getLogger(this.getClass());
     RecipeDao recipeDao = new RecipeDao();
+    UserDirectory userDao = new UserDirectory();
     int initialRecipeCount;
 
     @Test
@@ -42,18 +43,14 @@ public class RecipeDaoTest {
         assertEquals("Recipe was not deleted from the database", initialRecipeCount - 1, recipeDao.getAllRecipes().size());
     }
 
-/*
     @Test
     public void getUserRecipesTest() {
-        UserDirectory userDirectory = new UserDirectory();
-        List<Recipe> recipes = recipeDao.getUserRecipes(userDirectory.getUser("admin"));
-        assertEquals("test", "??", recipes.toString());
+        List<Integer> recipes = recipeDao.getUserRecipes(userDao.getUser("2"));
+        assertEquals("test", "??", recipes.size());
     }
-*/
 
     public Recipe createRecipe() {
-        UserDirectory userDirectory = new UserDirectory();
-        User user = userDirectory.getUser("admin");
+        User user = userDao.getUser("admin");
         BigDecimal amount = new BigDecimal("5");
         Ingredient ingredient = new Ingredient("Cheese", amount, "ounces");
         List ingredients = new ArrayList();

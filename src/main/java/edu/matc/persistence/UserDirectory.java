@@ -7,13 +7,20 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import javax.management.relation.Role;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type User directory.
+ */
 public class UserDirectory {
     private final Logger log = Logger.getLogger(this.getClass());
 
+    /**
+     * Gets all users.
+     *
+     * @return the all users
+     */
     public List<User> getAllUsers() {
         List<User> users = new ArrayList<User>();
         Session session = null;
@@ -30,6 +37,12 @@ public class UserDirectory {
         return users;
     }
 
+    /**
+     * Gets user.
+     *
+     * @param login the login
+     * @return the user
+     */
     public User getUser(String login) {
         User user = null;
         Session session = null;
@@ -46,6 +59,12 @@ public class UserDirectory {
         return user;
     }
 
+    /**
+     * Add user user.
+     *
+     * @param user the user
+     * @return the user
+     */
     public User addUser(User user) {
         Transaction transaction = null;
         Session session = null;
@@ -57,7 +76,7 @@ public class UserDirectory {
             log.info(newUser.toString());
             session.save(newUser);
             transaction.commit();
-        } catch (HibernateException he){
+        } catch (HibernateException he) {
             if (transaction != null) {
                 try {
                     transaction.rollback();
@@ -73,31 +92,41 @@ public class UserDirectory {
         return user;
     }
 
-    public void deleteUser(String login){
+    /**
+     * Delete user.
+     *
+     * @param login the login
+     */
+    public void deleteUser(String login) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction transaction = null;
-        try{
+        try {
             transaction = session.beginTransaction();
-            User user = (User)session.get(User.class, login);
+            User user = (User) session.get(User.class, login);
             session.delete(user);
             transaction.commit();
-        }catch (HibernateException e) {
-            if (transaction!=null) transaction.rollback();
+        } catch (HibernateException e) {
+            if (transaction != null) transaction.rollback();
             log.error("error deleting user", e);
-        }finally {
+        } finally {
             session.close();
         }
     }
 
+    /**
+     * Update user.
+     *
+     * @param user the user
+     */
     public void updateUser(User user) {
         Transaction transaction = null;
-        Session session= null;
+        Session session = null;
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
             session.saveOrUpdate(user);
             transaction.commit();
-        } catch (HibernateException he){
+        } catch (HibernateException he) {
             if (transaction != null) {
                 try {
                     transaction.rollback();
@@ -106,12 +135,18 @@ public class UserDirectory {
                 }
             }
         } finally {
-            if (session != null){
+            if (session != null) {
                 session.close();
             }
         }
     }
 
+    /**
+     * Add role user role.
+     *
+     * @param role the role
+     * @return the user role
+     */
     public UserRole addRole(UserRole role) {
         Transaction transaction = null;
         Session session = null;
@@ -119,10 +154,10 @@ public class UserDirectory {
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             transaction = session.beginTransaction();
-            newRole = new UserRole(role.getLogin(), role.getRoleName() );
+            newRole = new UserRole(role.getLogin(), role.getRoleName());
             session.save(role);
             transaction.commit();
-        } catch (HibernateException he){
+        } catch (HibernateException he) {
             if (transaction != null) {
                 try {
                     transaction.rollback();

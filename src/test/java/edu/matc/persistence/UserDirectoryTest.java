@@ -18,7 +18,7 @@ public class UserDirectoryTest {
     int initialUserCount;
 
 
-  /*  @Test
+    @Test
     public void getAllUsersTest() throws Exception {
         List<User> users = userDirectory.getAllUsers();
         assertTrue("Failed to get all users" + users.size(), users.size() > 0);
@@ -26,7 +26,7 @@ public class UserDirectoryTest {
 
     @Test
     public void getUserTest() throws Exception {
-        User userTest = new User("usertest", "usertest", "usertest");
+        User userTest = userDirectory.getUser("admin");
         userDirectory.addUser(userTest);
         user = userDirectory.getUser("usertest");
         assertNotNull("User usertest was not found", user);
@@ -36,7 +36,7 @@ public class UserDirectoryTest {
     @Test
     public void addUserTest() {
         initialUserCount = userDirectory.getAllUsers().size();
-        User user = new User("Steve", "Martin", "FunnyMan");
+        User user = userDirectory.getUser("admin");
         userDirectory.addUser(user);
         assertEquals("User was not added to the database", initialUserCount +1, userDirectory.getAllUsers().size());
         userDirectory.deleteUser("Martin");
@@ -44,7 +44,7 @@ public class UserDirectoryTest {
 
     @Test
     public void deleteUserTest() {
-        User deleteTest = new User("deletetest", "deletetest", "deletetest");
+        User deleteTest = userDirectory.getUser("admin");
         userDirectory.addUser(deleteTest);
         initialUserCount = userDirectory.getAllUsers().size();
         userDirectory.deleteUser("deletetest");
@@ -53,7 +53,7 @@ public class UserDirectoryTest {
 
     @Test
     public void updateUserTest() throws Exception {
-        User updateTest = new User("updatetest", "updatetest", "updatetest");
+        User updateTest = userDirectory.getUser("admin");
         userDirectory.addUser(updateTest);
         user = userDirectory.getUser("updatetest");
         user.setFirstName("Billy");
@@ -61,15 +61,15 @@ public class UserDirectoryTest {
         userDirectory.updateUser(user);
         assertEquals("user not saved correctly", user.toString(), userDirectory.getUser("updatetest").toString());
         userDirectory.deleteUser("updatetest");
-    }*/
+    }
 
-    /*@Test
+    @Test
     public void addRoleTest() {
         UserRole role = new UserRole("test", "user");
         userDirectory.addRole(role);
         assertEquals("Role was not added to the database", initialUserCount +1, userDirectory.getAllUsers().size());
 
-    }*/
+    }
 
 }
 

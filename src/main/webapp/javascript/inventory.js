@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
     console.log("entered javascript");
     var jsonString = '[';
-    $("#submit").on("click", function() {
+    $("#submit").on("click", function () {
         var length = $(".checkbox:checked").length;
         $(".checkbox:checked").each(function (i) {
             if (i == (length - 1)) {
@@ -14,7 +14,7 @@ $(document).ready(function() {
         console.log(jsonString);
 
 
-        $.post("shoppingList", jsonString, function() {
+        $.post("shoppingList", jsonString, function () {
             window.location.href = "/IndividualProject/shoppingList.jsp";
         })
     })

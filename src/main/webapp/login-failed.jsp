@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<c:set var="title" value="Failed Login" />
-<%@include file="partials/head.jsp"%>
+<c:set var="title" value="Failed Login"/>
+<%@include file="partials/head.jsp" %>
 <script src="./javascript/failedlogin.js" type="text/javascript"></script>
 
 <html>

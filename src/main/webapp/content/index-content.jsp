@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <script src="./javascript/newUser.js" type="text/javascript"></script>
-<%@include file="/partials/carousel.jsp"%>
+<%@include file="/partials/carousel.jsp" %>
 <div class="content">
 
     <p>Do you need to get groceries?</p>

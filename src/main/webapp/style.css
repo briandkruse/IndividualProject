@@ -43,7 +43,7 @@
 
 #navigation div {
 
-  }
+}
 
 #navigation a:hover {
     border: 1px solid white;
@@ -75,6 +75,7 @@ th {
     text-align: left;
 
 }
+
 table.dataTable thead th, table.dataTable thead td {
     padding: 5px 0px 5px 8px;
 }
@@ -93,7 +94,6 @@ hr {
 
 }
 
-
 .shoppinglist {
     font-family: 'Kalam', cursive;
     background-image: url(./images/Lined-Paper.png);
@@ -104,7 +104,7 @@ hr {
     padding-top: 2em;
 }
 
-.formcontent input[type='text']{
+.formcontent input[type='text'] {
     display: inline-block;
     width: 20%;
 }
@@ -121,7 +121,7 @@ hr {
 #userdata {
     width: 45%;
     float: left;
-    display:inline-block;
+    display: inline-block;
 }
 
 #edamam {
@@ -137,10 +137,12 @@ hr {
 /*Print Media Query*/
 @media print {
     #header, #footer, #navigation, img {
-        display : none;
+        display: none;
     }
+
     @page {
-        size: auto;  margin: 0mm;
+        size: auto;
+        margin: 0mm;
     }
 
 }

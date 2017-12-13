@@ -10,7 +10,7 @@
 
     </form>
     <div id="buttondiv">
-        <input type="button" id="newmeal" value="Start new meal"><br />
+        <input type="button" id="newmeal" value="Start new meal"><br/>
         <input type="submit" id="submit" value="Submit">
     </div>
 
@@ -49,14 +49,14 @@
                 '</div>'
             )
             choiceNumber++;
-            $('#newchoice' + mealNumber).detach().appendTo("#meal"  + mealNumber);
+            $('#newchoice' + mealNumber).detach().appendTo("#meal" + mealNumber);
         }
 
-        function appendSelectElement(){
+        function appendSelectElement() {
             return '<label for="choice' + choiceNumber + '" >Choice ' + choiceNumber + ':</label>' +
                 '<select id="choice' + choiceNumber + '" name="choice' + choiceNumber + '" class="choice">' +
                 '<option value="all">Choose one</option>' +
-                '<c:forEach var="recipe" items="${recipes}">'   +
+                '<c:forEach var="recipe" items="${recipes}">' +
                 '<option value="${recipe.id}">${recipe.name}</option>' +
                 '</c:forEach>' +
                 '</select><br />';
