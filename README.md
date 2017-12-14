@@ -46,4 +46,5 @@ Wireframes:
 ### [Database](UML/databaseUml.png)
 
 ### Demo
-<iframe src="https://drive.google.com/file/d/12-kUKziSMgUluifJeoP0ZdhFoggv6_Fg/preview" width="640" height="480"></iframe>
+https://drive.google.com/open?id=14J9iaSC1DWPiKPNcVPhdu4ch0ApjW51V
+https://drive.google.com/open?id=12-kUKziSMgUluifJeoP0ZdhFoggv6_Fg
